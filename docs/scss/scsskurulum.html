@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sasskursu.css" type="text/css" media="all" />
+    <title>SCSS Kullanımı</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body class="siyah">
+    <h1>SCSS Kullanımı</h1>
+
+    <h2>Temel SCSS Komutları</h2>
+
+    <p>SCSS kurulumu ve kullanımı ile ilgili temel komutlar:</p>
+    
+    <h3>1. SCSS Kurulumu</h3>
+    <pre>npm install -g sass</pre>
+
+    <h3>2. SCSS Dosyasını CSS'e Dönüştürme</h3>
+    <pre>sass sasskursu.scss sasskursu.css</pre>
+
+    <h3>3. SCSS İzleme Modu</h3>
+    <p>Bu mod, SCSS dosyalarındaki değişiklikleri otomatik olarak algılar ve CSS'e dönüştürür.</p>
+    <pre>sass --watch sasskursu.scss:sasskursu.css</pre>
+
+    <h2>SCSS Dosyası Örneği</h2>
+    <p>Bir SCSS dosyasında kullanılan temel yapı:</p>
+    <pre>
+    \$primary-color: #333;
+    \$font-stack: Helvetica, Arial, sans-serif;
+
+    body {
+        font-family: \$font-stack;
+        color: \$primary-color;
+    }
+
+    h1 {
+        color: darken(\$primary-color, 20%);
+    }
+    </pre>
+
+    <h2>Ekstra SCSS Özellikleri</h2>
+    <p>SCSS ile kullanabileceğiniz bazı ekstra özellikler:</p>
+    <ul>
+        <li><strong>İç içe Yazım:</strong> SCSS, CSS seçicilerini iç içe yazmanıza olanak tanır, bu da kodunuzu daha düzenli ve okunabilir kılar.</li>
+        <li><strong>Mixins:</strong> Tekrar eden CSS bloklarını yeniden kullanmak için mixins oluşturabilirsiniz.</li>
+        <li><strong>Extend/Inheritance:</strong> Ortak stil özelliklerini paylaşmak için, bir seçiciyi başka bir seçiciye genişletebilirsiniz.</li>
+        <li><strong>Fonksiyonlar:</strong> Renkleri ayarlamak, matematiksel hesaplamalar yapmak gibi işlemler için SCSS fonksiyonlarını kullanabilirsiniz.</li>
+    </ul>
+
+    <footer>
+        <p>© 2024 SCSS Dökümanı</p>
+    </footer>
+</body>
+</html>

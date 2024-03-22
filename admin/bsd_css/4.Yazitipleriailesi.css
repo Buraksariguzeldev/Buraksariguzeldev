@@ -1,0 +1,112 @@
+@font-face {
+font-family: 'bsd-Potta_One';
+src: url('../../font/PottaOneRegular/PottaOneRegular.woff2') format('woff2');
+}
+
+@font-face {
+font-family: 'bsd-Skranji';
+src: url('../../font/Skranji/Skranji.woff') format('woff'),
+url('../../font/Skranji/Skranji.woff2') format('woff2');
+}
+
+@font-face {
+font-family: 'bsd-UnicornPop';
+src: url('../../font/UnicornPop/UnicornPop.woff') format('woff'),
+url('../../font/UnicornPop/UnicornPop.woff2') format('woff2');
+}
+
+@font-face {
+font-family: 'bsd-Nabla';
+src: url('../../font/NablaRegular/NablaRegular.woff') format('woff'),
+url('../../font/NablaRegular/NablaRegular.woff2') format('woff2');
+}
+
+@font-face {
+font-family: 'bsd-Socialtype';
+src: url('../font/socialtype/socialtype.woff') format('woff'),
+url('../font/socialtype/socialtype.woff2') format('woff2');
+font-weight: normal;
+font-style: normal;
+font-display: swap;
+}
+
+@font-face {
+font-family: 'bsd-Langdon';
+src: url('../../font/Langdon/Langdon.woff') format('woff'),
+url('../../font/Langdon/Langdon.woff2') format('woff2');
+}
+
+@font-face {
+font-family: 'bsd-SquimFont';
+src: url('../../font/SquimFont/SquimFont.woff') format('woff'),
+url('../../font/SquimFont/SquimFont.woff2') format('woff2');
+}
+
+@font-face {
+font-family: 'bsd-Moonstar';
+src: url('../../font/Moonstar/Moonstar.woff') format('woff'),
+url('../../font/Moonstar/Moonstar.woff2') format('woff2');
+}
+
+@font-face {
+font-family: 'bsd-Righteous';
+src: url('../../font/RighteousRegular/RighteousRegular.woff') format('woff'),
+url('../../font/RighteousRegular/RighteousRegular.woff2') format('woff2');
+}
+
+@font-face {
+font-family: 'bsd-BlackOpsOne';
+src: url('../../font/BlackOpsOneRegular/BlackOpsOneRegular.woff') format('woff'),
+url('../../font/BlackOpsOneRegular/BlackOpsOneRegular.woff2') format('woff2');
+}
+
+.bsd-PottaOne, .bsd-Skranji, .bsd-UnicornPop, .bsd-Nabla, .bsd-Socialtype, .bsd-Langdon, .bsd-SquimFont, .bsd-Moonstar, .bsd-Righteous, .bsd-BlackOpsOne {
+font-display: swap;
+}
+.bsd-PottaOne {
+font-family: 'bsd-Potta_One', sans-serif;
+}
+
+.bsd-Skranji {
+font-family: 'bsd-Skranji', serif;
+}
+
+.bsd-UnicornPop {
+font-family: 'bsd-UnicornPop', cursive;
+}
+
+.bsd-Nabla {
+font-family: 'bsd-Nabla', monospace;
+}
+
+.bsd-Socialtype {
+font-family: 'bsd-Socialtype', sans-serif;
+}
+
+.bsd-Langdon {
+font-family: 'bsd-Langdon', sans-serif;
+}
+
+.bsd-SquimFont {
+font-family: 'bsd-SquimFont', fantasy;
+}
+
+.bsd-Moonstar {
+font-family: 'bsd-Moonstar', cursive;
+}
+
+.bsd-Righteous {
+font-family: 'bsd-Righteous', sans-serif;
+}
+
+.bsd-BlackOpsOne {
+font-family: 'bsd-BlackOpsOne', sans-serif;
+}
+
+body {
+background: black;
+}
+
+li {
+color: white;
+}

@@ -1,0 +1,125 @@
+body {
+    background-color: black;
+    color:white;
+}
+
+
+.borderders {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    width: 600px;
+
+}
+
+.solid {
+    border: 5px solid;
+}
+
+.ridge {
+    border: 5px ridge;
+}
+
+.dotted {
+    border: 5px dotted;
+}
+
+.double {
+    border: 5px double;
+}
+
+.dashed {
+    border: 5px dashed;
+}
+
+.groove {
+    border: 5px groove;
+}
+
+.inset {
+    border: 5px inset;
+}
+
+.outset {
+    border: 5px outset;
+}
+
+.hidden {
+    border: 5px hidden;
+}
+
+.none {
+    border: 5px none;
+}
+
+/* BORDER BOTTOM */
+
+.solidbottom {
+    border-bottom: 5px solid;
+}
+
+.solidtop {
+    border-top: 5px solid;
+}
+
+.solidleft {
+    border-left: 5px solid;
+}
+
+.solidright {
+    border-right: 5px solid;
+}
+
+.borderradius {
+    border-radius: 20px;
+}
+
+.borderblock {
+    border-block: 5px solid;
+}
+
+.borderinline {
+    border-inline: 5px solid;
+}
+
+
+/*color ve style kismi */
+
+.borderinlinecolor {
+    border-inline-end-color: red;
+    border-inline-start-color: green;
+    border-inline-start-style: dashed;
+    border-inline-end-style: double;
+}
+
+.borderblockcolor {
+    border-block-start-style: ridge;
+    border-block-end-style: groove;
+    border-block-start-color: blueviolet;
+    border-block-end-color: yellow;
+}
+
+
+
+.borderimage {
+    border: 10px solid transparent;
+    border-image: url('../../img/border.png') 30 round;
+}
+
+.borderimage1 {
+    border: 10px solid transparent;
+    border-image: url('../../img/border.png') 30 stretch;
+}
+
+.borderimage2 {
+    height: 10px;
+    background-color: yellow;
+    border: 15px solid transparent;
+    border-image-source: url('../../img/border.png');
+    border-image-repeat: stretch;
+    border-image-slice: 30;
+    border-image-width: 10px;
+    border-image-outset: 10px;
+    color: red;
+    text-align: center;
+}

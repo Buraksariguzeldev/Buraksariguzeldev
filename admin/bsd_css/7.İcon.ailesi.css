@@ -1,0 +1,42 @@
+.fa-alibay,
+.fa-alibay1 {
+   width: 1px;
+   padding: 10px;
+   background-repeat: no-repeat;
+}
+
+.fa-alibay {
+   background-image: url('../fontawesome-free-6.4.2-web/svgs/brands/alipay.svg');
+}
+
+.fa-alibay1 {
+   background-image: url('../fontawesome-free-6.4.2-web/svgs/brands/android.svg');
+}
+
+.fa-alibay2 {
+   background-image: url('../fontawesome-free-6.4.2-web/svgs/regular/calendar-minus.svg');
+}
+
+.fa-gear1 {
+   background-image: url('../Iconlar/css_FILL0_wght400_GRAD0_opsz24.png');
+   padding: 15px;
+   background-repeat:no-repeat ;
+   background-position: center;
+   filter:grayscale(red);
+}
+.fa-turkbayragi {
+   padding: 15px;
+   background-repeat:no-repeat ;
+   background-position: center;
+   background-image: url('../Resimler/turk bayragi.jpeg');
+
+}
+
+
+p i {
+   color: red;
+}
+
+.red {
+   color: red;
+}

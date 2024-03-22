@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="tr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Git Komutları</title>
+        <style>
+            body {
+                font-family: "Arial", sans-serif;
+                margin: 0;
+                padding: 20px;
+                background-color: #f4f4f4;
+                color: #333;
+            }
+            .container {
+                background-color: #fff;
+                border: 1px solid #eaeaea;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+            pre {
+                position: relative;
+                background-color: #fdf6e3;
+                border: 1px solid #ccc;
+                padding: 10px 20px;
+                overflow-x: auto;
+                margin-top: 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            button {
+                padding: 5px 10px;
+                cursor: pointer;
+            }
+            code {
+                flex-grow: 1;
+                font-family: "Courier New", monospace;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <pre><code>cd /storage/emulated/0/Buraksariguzeldev</code><button onclick="copyCode(this)">Copy</button></pre>
+            <pre><code>git init</code><button onclick="copyCode(this)">Copy</button></pre>
+            <pre><code>git add .</code><button onclick="copyCode(this)">Copy</button></pre>
+            <pre><code>git commit -m "Initial commit"</code><button onclick="copyCode(this)">Copy</button></pre>
+            <pre><code>git push -u origin main</code><button onclick="copyCode(this)">Copy</button></pre>
+        </div>
+        <script>
+            function copyCode(btn) {
+                // Get the text from the sibling <code> element
+                const code = btn.previousElementSibling.textContent;
+                // Use the navigator.clipboard API to copy the text
+                navigator.clipboard
+                    .writeText(code)
+                    .then(() => {
+                        // Provide feedback that the text was copied
+                        btn.textContent = "Copied!";
+                        // Reset button text after 2 seconds
+                        setTimeout(() => (btn.textContent = "Copy"), 2000);
+                    })
+                    .catch(err => {
+                        console.error("Error copying text: ", err);
+                    });
+            }
+        </script>
+      <hr/>
+        <a href="../../İndex.html">ana sayfa</a> 
+      <hr/ >
+      <a href="../docs.html"> geri don</a>
+        <hr/ >
+    </body>
+</html>

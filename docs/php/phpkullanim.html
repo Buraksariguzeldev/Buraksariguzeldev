@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termux'ta PHP Kurulumu ve Localhost'ta Çalıştırma</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Termux'ta PHP Kurulumu</h1>
+
+    <h2>PHP'nin Termux Üzerinde Kurulumu</h2>
+    <p>Termux üzerinde PHP'yi kurmak için aşağıdaki adımları takip edin:</p>
+    <ol>
+        <li>Termux uygulamasını açın.</li>
+        <li>Aşağıdaki komutu kullanarak PHP paketini yükleyin:
+            <pre>pkg install php</pre>
+        </li>
+        <li>Kurulum tamamlandıktan sonra, PHP'nin başarıyla yüklendiğini kontrol etmek için şu komutu girin:
+            <pre>php -v</pre>
+        </li>
+    </ol>
+
+    <h2>Basit Bir PHP Betiği Oluşturma ve Localhost'ta Çalıştırma</h2>
+    <p>Bir PHP dosyası oluşturmak ve yerel bir sunucu üzerinde çalıştırmak için:</p>
+    <ol>
+        <li>Termux'ta `nano` veya başka bir metin editörünü kullanarak yeni bir PHP dosyası oluşturun, örneğin:
+            <pre>nano test.php</pre>
+        </li>
+        <li>Aşağıdaki içeriği dosyaya yazın ve kaydedin:
+            <pre>&lt;?php\n    echo "Merhaba, PHP!";\n?&gt;</pre>
+        </li>
+        <li>PHP yerel sunucusunu başlatmak için aşağıdaki komutu kullanın:
+            <pre>php -S localhost:8080</pre>
+        </li>
+        <li>Herhangi bir web tarayıcısında, şu adresi ziyaret edin:
+            <pre>localhost:8080/test.php</pre>
+            Bu adım, PHP yerel sunucusu üzerinde `test.php` dosyanızı yükleyecektir.
+        </li>
+    </ol>
+
+    <footer>
+        <p>© 2024 PHP Termux Rehberi</p>
+    </footer>
+</body>
+</html>

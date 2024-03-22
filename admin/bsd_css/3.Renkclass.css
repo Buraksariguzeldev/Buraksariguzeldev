@@ -1,0 +1,245 @@
+:root {
+  --bsdv-Siyah_Renk: #000;
+  --bsdv-Beyaz_Renk: #fff;
+  --bsdv-Sari-Renk: yellow;
+  --bsdv-Kirmizi-Renk: red;
+  --bsdv-Turuncu-Renk: orange;
+  --bsdv-Grey-Renk: grey;
+  --bsdv-Yesil-renk: green;
+  --bsdv-Mavi-renk: blue;
+  --bsdv-Pembe-Renk: pink;
+  --bsdv-Mor-Renk: purple;
+  --bsdv-Kahverengi-renk: brown;
+  --bsdv-Turkuaz-Renk: turquoise;
+  --bsdv-Altin-Renk: gold;
+  --bsdv-Gumus-Renk: silver;
+  --bsdv-Haki-Renk: khaki;
+  --bsdv-Lavanta-Renk: lavender;
+}
+
+/* Genel Stil Ayarları */
+.bsd-linkkaldir {
+  text-decoration: none;
+}
+
+.bsd-AltCizgi {
+  text-decoration: underline;
+}
+
+.bsd ul {
+  padding: auto;
+  margin: auto;
+  list-style: none;
+}
+
+.bsd-DashedB {
+  border: 5px dashed;
+}
+
+.bsd-AnaKutuK3 {
+  display: inline-block;
+  font-size: 15px;
+}
+
+.bsd-AnaKutuK3 li:hover {
+  border: 5px dashed;
+}
+.bsd-Ortala {
+  text-align: center;
+}
+/* Renk Tanımları ve Stilleri */
+/* Sarı Renkler */
+.bsd-SariAlan {
+  border: 5px ridge var(--bsdv-Sari-Renk);
+}
+
+.bsd-Sari {
+  color: var(--bsdv-Sari-Renk);
+}
+
+.bsd-Sariap {
+  background-color: var(--bsdv-Sari-Renk);
+}
+
+.bsd-HardalRengi {
+  color: #FFDB58;
+}
+
+.bsd-MisirRengi {
+  color: #FBEC5D;
+}
+
+/* Beyaz Renkler */
+.bsd-BeyazAlan {
+  border: 5px ridge var(--bsdv-Beyaz_Renk);
+}
+
+.bsd-Beyaz {
+  color: var(--bsdv-Beyaz_Renk);
+}
+
+.bsd-Beyazap {
+  background-color: var(--bsdv-Beyaz_Renk);
+}
+
+/* Kırmızı Alan */
+.bsd-KirmiziAlan {
+  border: 5px ridge var(--bsdv-Kirmizi-Renk);
+}
+
+.bsd-Kirmizi {
+  color: var(--bsdv-Kirmizi-Renk);
+}
+
+.bsd-Kirmiziap {
+  background-color: var(--bsdv-Kirmizi-Renk);
+}
+
+/* Turuncu Renkler */
+.bsd-TuruncuAlan {
+  border: 5px ridge var(--bsdv-Turuncu-Renk);
+}
+
+.bsd-Turuncu {
+  color: var(--bsdv-Turuncu-Renk);
+}
+
+.bsd-Turuncuap {
+  background-color: var(--bsdv-Turuncu-Renk);
+}
+
+.bsd-Alevturuncusu {
+  color: #FF6600;
+}
+
+/* Gri Renkler */
+.bsd-GriAlan {
+  border: 5px ridge var(--bsdv-Grey-Renk);
+}
+
+.bsd-Gri {
+  color: var(--bsdv-Grey-Renk);
+}
+
+.bsd-Griap {
+  background-color: var(--bsdv-Grey-Renk);
+}
+
+/* Yeşil Renkler */
+.bsd-YesilAlan {
+  border: 5px ridge var(--bsdv-Yesil-renk);
+}
+
+.bsd-Yesil {
+  color: var(--bsdv-Yesil-renk);
+}
+
+.bsd-Yesilap {
+  background-color: var(--bsdv-Yesil-renk);
+}
+
+/* Mavi Renkler */
+.bsd-MaviAlan {
+  border: 5px ridge var(--bsdv-Mavi-renk);
+}
+
+.bsd-Mavi {
+  color: var(--bsdv-Mavi-renk);
+}
+
+.bsd-Maviap {
+  background-color: var(--bsdv-Mavi-renk);
+}
+
+/* Pembe Renkler */
+.bsd-PembeAlan {
+  border: 5px ridge var(--bsdv-Pembe-Renk);
+}
+
+.bsd-Pembe {
+  color: var(--bsdv-Pembe-Renk);
+}
+
+.bsd-Pembeap {
+  background-color: var(--bsdv-Pembe-Renk);
+}
+
+/* Mor Renkler */
+.bsd-MorAlan {
+  border: 5px ridge var(--bsdv-Mor-Renk);
+}
+
+.bsd-Mor {
+  color: var(--bsdv-Mor-Renk);
+}
+
+/* Siyah Renkler */
+.bsd-SiyahAlan {
+  border: 5px ridge var(--bsdv-Siyah_Renk);
+}
+
+.bsd-Siyah {
+  color: var(--bsdv-Siyah_Renk);
+}
+
+.bsd-Siyahap {
+  background-color: var(--bsdv-Siyah_Renk);
+}
+
+/* Kahverengi renkler */
+.bsd-KahverengiAlan {
+  border: 5px ridge var(--bsdv-Kahverengi-renk);
+}
+
+.bsd-Kahverengi {
+  color: var(--bsdv-Kahverengi-renk);
+}
+
+.bsd-Kahverengiap {
+  background-color: var(--bsdv-Kahverengi-renk);
+}
+
+/* Turkuaz Renkler */
+.bsd-TurkuazAlan {
+  border: 5px ridge var(--bsdv-Turkuaz-Renk);
+}
+
+.bsd-Turkuaz {
+  color: var(--bsdv-Turkuaz-Renk);
+}
+
+/* Altın Renkler */
+.bsd-AltinAlan {
+  border: 5px ridge var(--bsdv-Altin-Renk);
+}
+
+.bsd-Altin {
+  color: var(--bsdv-Altin-Renk);
+}
+
+/* Gümüş Renkler */
+.bsd-GumusAlan {
+  border: 5px ridge var(--bsdv-Gumus-Renk);
+}
+
+.bsd-Gumus {
+  color: var(--bsdv-Gumus-Renk);
+}
+
+/* Haki Renkler */
+.bsd-HakiAlan {
+  border: 5px ridge var(--bsdv-Haki-Renk);
+}
+
+.bsd-Haki {
+  color: var(--bsdv-Haki-Renk);
+}
+
+/* Lavanta Renkler */
+.bsd-LavantaAlan {
+  border: 5px ridge var(--bsdv-Lavanta-Renk);
+}
+
+.bsd-Lavanta {
+  color: var(--bsdv-Lavanta-Renk);
+}

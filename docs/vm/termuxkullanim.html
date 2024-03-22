@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termux Dosya ve Klasör İşlemleri</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Termux Dosya ve Klasör İşlemleri</h1>
+
+    <h2>Klasör Oluşturma</h2>
+    <p>Yeni bir klasör oluşturmak için:</p>
+    <pre>mkdir yeni_klasor</pre>
+
+    <h2>Dosya Oluşturma</h2>
+    <p>Yeni bir dosya oluşturmak için:</p>
+    <pre>touch yeni_dosya.txt</pre>
+
+    <h2>Dosya ve Klasörleri Listeleme</h2>
+    <p>Dosya ve klasörleri listelemek için:</p>
+    <pre>ls</pre>
+
+    <h2>Dosya Düzenleme</h2>
+    <p>Dosyayı düzenlemek için (örneğin, 'nano' ile):</p>
+    <pre>nano yeni_dosya.txt</pre>
+
+    <h2>Dosya Silme</h2>
+    <p>Bir dosyayı silmek için:</p>
+    <pre>rm dosya.txt</pre>
+
+    <h2>Dosya Kopyalama</h2>
+    <p>Bir dosyayı kopyalamak için:</p>
+    <pre>cp kaynak_dosya hedef_dosya</pre>
+
+    <h2>Dosya Taşıma/Yeniden Adlandırma</h2>
+    <p>Bir dosyayı taşımak veya yeniden adlandırmak için:</p>
+    <pre>mv eski_ad yeni_ad</pre>
+
+    <h2>Klasör Silme</h2>
+    <p>Bir klasörü ve içeriğini silmek için:</p>
+    <pre>rm -r klasor_adi</pre>
+
+    <!-- Buradan itibaren eklemeler -->
+    <h2>Hızlı Dosya ve Klasör Erişimi</h2>
+    <p>Hızlıca belirli bir dosya veya klasöre erişmek için 'cd' ve 'ls' komutlarını birleştirebilirsiniz:</p>
+    <pre>cd klasor_adi && ls</pre>
+
+    <h2>Dosya ve Klasör İzinleri</h2>
+    <p>Dosya ve klasör izinlerini görüntülemek ve değiştirmek için 'chmod' ve 'chown' komutlarını kullanabilirsiniz:</p>
+    <pre>ls -l
+chmod 755 dosya.txt
+chown kullanici:grup dosya.txt</pre>
+
+    <h2>Metin Dosyalarını Bulma ve Okuma</h2>
+    <p>Belirli bir metni içeren dosyaları bulmak için 'grep' komutunu kullanabilirsiniz:</p>
+    <pre>grep 'aranan_metin' *</pre>
+
+    <footer>
+        <p>© 2024 Termux Dosya ve Klasör İşlemleri</p>
+    </footer>
+</body>
+</html>

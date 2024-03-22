@@ -1,0 +1,8 @@
+{
+    "files.autoGuessEncoding": false,
+    "files.autoSaveWorkspaceFilesOnly": true,
+    "files.autoSaveWhenNoErrors": true,
+    "files.autoSave": "afterDelay",
+    "editor.wordBasedSuggestions": "allDocuments",
+    "workbench.activityBar.location": "side"
+}

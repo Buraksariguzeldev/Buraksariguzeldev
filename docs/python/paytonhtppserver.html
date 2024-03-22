@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termux'ta Python ile HTTP Sunucusu Kurulumu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 15px;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Termux'ta Python ile Basit HTTP Sunucusu Kurulumu</h1>
+
+    <h2>Python Yükleme</h2>
+    <p>Termux'a Python yüklemek için:</p>
+    <pre>pkg install python</pre>
+
+    <h2>HTML Dosyası Oluşturma</h2>
+    <p>Bir HTML dosyası oluşturun:</p>
+    <pre>echo "&lt;h1&gt;Merhaba Dünya!&lt;/h1&gt;" > index.html</pre>
+
+    <h2>Python HTTP Sunucusunu Başlatma</h2>
+    <p>Python ile basit bir HTTP sunucusu başlatmak için:</p>
+    <pre>python -m http.server 8080</pre>
+
+    <h2>Tarayıcıda Erişim</h2>
+    <p>Web tarayıcınızda `localhost:8080` adresine giderek HTML dosyasını görüntüleyin.</p>
+
+    <footer>
+        <p>© 2024 Python HTTP Sunucusu Dokümantasyonu</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Page 2</h1>
+    <div id="htmlPreview"></div>
+    <div id="dateTime"></div>
+    <script>
+        $(document).ready(function() {
+            const params = new URLSearchParams(window.location.search);
+            const htmlContent = params.get('htmlContent');
+
+            $("#htmlPreview").html(htmlContent);
+
+            const currentDate = new Date();
+            const formattedDate = currentDate.toLocaleDateString();
+            const formattedTime = currentDate.toLocaleTimeString();
+
+            $("#dateTime").html(`Date: ${formattedDate}<br>Time: ${formattedTime}`);
+        });
+    </script>
+</body>
+</html>

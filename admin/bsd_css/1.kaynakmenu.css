@@ -1,0 +1,163 @@
+#bsd-navbar10 {
+ background-color: black;
+  height: 50px;
+  width: 970px;
+  padding: 15px;
+  border: 5px ridge yellow;
+  border-radius: 20px;
+  text-transform: capitalize;
+}
+
+#bsd-navbar10 ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#bsd-navbar10 li {
+  float: left;
+  position: relative;
+  border-radius: 15px;
+  text-align: center;
+}
+
+#bsd-navbar10 li a {
+  display: block;
+  color: red;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+}
+
+#bsd-navbar10 li a:hover {
+  background-color: yellow;
+  border: 2px ridge purple;
+  border-radius: 10px;
+}
+
+.menubar-submenu {
+  border: none;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 2px solid black;
+  border-radius: 5px;
+  color: yellow;
+}
+
+#bsd-navbar10 li:hover .menubar-submenu {
+  display: block;
+  
+}
+
+.menubar-submenu ul li {
+  display: block;
+}
+
+.menubar-submenu ul li a {
+  padding: 8px 16px;
+  color: #fff;
+  border-bottom: 5px solid green;
+  background-color: black;
+}
+
+.fa-home {
+  color: green;
+}
+
+img {
+  padding: 1px;
+  width: 25px;
+  margin-bottom: 5px;
+}
+
+
+/* kaynakmenudivalt*/
+
+#bsd_footerbar10 {
+  color: red;
+  background-color: grey ;
+  text-align: center;
+  font-size: 15px;
+  width: 990px;
+  border: 5px dashed yellow;
+  border-radius: 15px;
+}
+
+#bsd-footerbar10 .altmenu p {
+  color: blue;
+  text-transform: capitalize;
+  font-size: 25px;
+}
+
+#bsd-footerbar10 .sosyalmedya-kaynak {
+background-color: #333;
+  color: yellow;
+  border: 5px solid green;
+  text-transform: capitalize;
+  border-radius: 15px;
+  padding: 5px;
+}
+#bsd_footerbar10 .sosyalmedya-kaynak ul  {
+  display: flex;
+  justify-content: center;
+}
+
+#bsd_footerbar10 .sosyalmedya-kaynak ul li {
+  list-style: none;
+  margin-right: 120px;
+  text-align: center;
+}
+#bsd_footerbar10 .sosyalmedya-kaynak ul li a {
+  border: 5px ridge green;
+  border-radius: 15px;
+  padding: 15px;
+  text-decoration: none;
+  height: 15px;
+  background-color: black;
+ 
+}
+.fa-facebook {
+  color: blue;
+  background-color:red;
+}
+.fa-whatsapp {
+  color: green;
+}
+.fa-instagram {
+  color: red;
+}
+.instagram-kaynak{
+color: red;
+}
+.whatsapp-kaynak{
+  color: green;
+}
+.facebook-kaynak{
+  color: blue;
+}
+.altspan {
+  color: yellow;
+  margin-block: 5px;
+  text-align: center;
+  font-size: 20px;
+  text-align: center;
+}
+/* son kisim */
+
+bsd_footerbar10 .kaynakmenudivaltson{
+  color: yellow;
+  text-transform: capitalize;
+  margin: 10px;
+  border: 5px ridge yellow;
+  border-radius: 15px;
+  background-color: grey;
+}
+.img {
+float: left;
+width: 3em;
+}
+
+

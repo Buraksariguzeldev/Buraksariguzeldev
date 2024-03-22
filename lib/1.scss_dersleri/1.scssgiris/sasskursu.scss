@@ -1,0 +1,35 @@
+$primary-color: green;
+$siyah :black;
+$kirmizi :red;
+$beyaz :white;
+$sari :yellow;
+$gri:grey;
+$turuncu:orange;
+$mavi :blue;
+$altin:gold;
+$silvers:silver;
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  color: $primary-color;
+}
+.siyah {
+  background-color: $siyah;
+}
+pre {
+  color:$kirmizi;
+}
+h1 {
+  color:$sari;
+}
+h3 {
+  color:$gri;
+}
+p {
+  color: $turuncu;
+}
+li {
+  color:$silvers;
+}
+strong {
+  color:$altin;
+}
