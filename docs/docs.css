@@ -1,0 +1,106 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000; /* Black background */
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h3 {
+    color: #444;
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+p, ul li, ul li h4, ul li p {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 25px;
+    background-color: grey;
+}
+strong {
+  color: red;
+  border: 5px ridge green;
+  border-right: 5px;
+  border-bottom: 5px;
+  border-top: 5px;
+  background-color: black;
+  box-shadow: 1 2px 4px rgba(0,0,0,0.1);
+}
+
+a strong  {
+  color: grey;
+  border: 5px ridge green;
+  background-color: white;
+  border-right: 5px;
+  border-bottom: 5px;
+  border-top: 5px;
+  box-shadow: 1 2px 4px rgba(0,0,0,0.1);
+}
+
+a {
+    color: grey;
+    text-decoration: none;
+    background-color: #fff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid;
+    border-color: red;
+}
+
+.highlight {
+    color: blue;
+    font-weight: bold;
+}
+
+.suffix {
+    font-style: italic;
+}
+
+.heading {
+    background-color: grey;
+    color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.sub-nav {
+  display: none;
+}
+
+code {
+  background-color: orange;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+
+footer ul li  {
+  border: 5px solid #fff;
+  border-radius: 20px;
+  background-color: grey;
+}
+
+.copy-btn {
+  color: red;
+  background-color: #fff;
+  cursor: pointer;
+}
+

@@ -1,73 +1,437 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Termux Dosya ve Klasör İşlemleri</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-        }
-        pre {
-            background-color: #f4f4f4;
-            padding: 15px;
-            overflow: auto;
-        }
-    </style>
-</head>
-<body>
-    <h1>Termux Dosya ve Klasör İşlemleri</h1>
+    <link rel="stylesheet" href="../docs.css" type="text/css" media="all" />
+    <title>Termux komutları</title>
+    
+  </head>
+  <body>
+        <hr>
+    <a href="../../İndex.html"><strong>İndex</strong></a> 
+    <hr>
+    <a href="../docs.html"><strong>Docs</strong></a>
+    
+ <hr /> 
+ 
+<h4 class="heading">Yardım ve Geçmiş Komutları</h4>
+<ul>
+    <li><code>help</code>: Termux'ta kullanılabilir komutlar hakkında bilgi almak için kullanılır.</li>
+    <li><code>help --help</code>: Yardım komutunun kendisi hakkında bilgi alır.</li>
+    <li><code>help command_name</code>: Belirli bir komut hakkında ayrıntılı bilgi almak için kullanılır.</li>
+    <li><code>man command_name</code>: Bir komutun nasıl kullanılacağını öğrenmek için kılavuz sayfalarını görüntüler.</li>
+    <li><code>history</code>: Daha önce girilen komutların listesini görüntüler.</li>
+    <li><code>history -c</code>: Geçmişi temizler, yani tüm geçmiş kayıtlarını siler.</li>
+    <li><code>history -d n</code>: Belirli bir geçmiş girdisini siler, <code>"n"</code> geçmiş girdisinin numarasını belirtir.</li>
+</ul>   
+    
+<hr />
 
-    <h2>Klasör Oluşturma</h2>
-    <p>Yeni bir klasör oluşturmak için:</p>
-    <pre>mkdir yeni_klasor</pre>
+<h4 class="heading">1.Paket Yönetimi</h4>
+<ul>
+    <li><code>pkg update</code>: Paket veritabanını günceller.</li>
+    <li><code>pkg upgrade -y</code>: Mevcut paketleri yükseltir.</li>
+    <li><code>pkg install package_name -y</code>: Belirtilen paketi yükler.</li>
+    <li><code>pkg uninstall package_name -y</code>: Belirtilen paketi kaldırır.</li>
+    <li><code>pkg list-installed</code>: Kurulu paketleri listeler.</li>
+    <li><code>pkg search package_name</code>: Belirtilen paket için arama yapar.</li>
+    <li><code>pkg info package_name</code>: Belirtilen paket hakkında bilgi görüntüler.</li>
+    <li><code>pkg clean</code>: Paket önbelleklerini temizler.</li>
+    <li><strong>Paket bağımlılıklarını yönetme:</strong> Paket yöneticisi, gerekli tüm bağımlılıkları otomatik olarak yükler ve yönetir.</li>
+    <li><strong>Paketleri belirli sürümlere kilitleme:</strong> Paket yöneticisi, belirli bir paket sürümünü kilitlemenize olanak tanır, böylece otomatik güncellemeler tarafından etkilenmez.</li>
+    <li><strong>Paketleri kaynak kodundan derleme:</strong> Paket yöneticileri genellikle paketleri kaynak kodundan derleme seçeneği sunar, bu da daha fazla özelleştirme ve kontrol sağlar.</li>
+    <li><strong>Paket depoları:</strong> Paket yöneticileri, paketleri barındıran depolar kullanır. Kullanıcılar, kendi depolarını oluşturabilir veya üçüncü taraf depolar ekleyebilir.</li>
+    <li><strong>Paket yönetimi araçları:</strong> Paket yönetimini kolaylaştırmak için `apt`, `yum` ve `pacman` gibi çeşitli paket yönetimi araçları mevcuttur.</li>
+</ul>
 
-    <h2>Dosya Oluşturma</h2>
-    <p>Yeni bir dosya oluşturmak için:</p>
-    <pre>touch yeni_dosya.txt</pre>
+<hr />
+<!-- Dosya Yönetimi  -->
 
-    <h2>Dosya ve Klasörleri Listeleme</h2>
-    <p>Dosya ve klasörleri listelemek için:</p>
-    <pre>ls</pre>
+<h4 class="heading">Dosya Yönetimi</h4>
+<ul>
+    <li><code>cd directory_name</code>: Belirtilen dizine geçer (directory_name, dizin adıyla değiştirilmelidir).</li>
+    <li><code>cd ..</code>: Bir üst dizine geçer.</li>
+    <li><code>ls</code>: Mevcut dizindeki dosyaları ve klasörleri listeler.</li>
+    <li><code>mkdir directory_name</code>: Yeni bir dizin oluşturur (directory_name, dizin adıyla değiştirilmelidir).</li>
+    <li><code>touch file_name</code>: Yeni bir dosya oluşturur (file_name, dosya adıyla değiştirilmelidir).</li>
+    <li><code>mv source_file destination_file</code>: Belirtilen dosyayı başka bir konuma taşır veya yeniden adlandırır (source_file, kaynak dosya adı, destination_file hedef dosya adı veya hedef dizin adı).</li>
+    <li><code>rm file_name</code>: Belirtilen dosyayı siler (file_name, dosya adıyla değiştirilmelidir).</li>
+    <li><code>rm -r directory_name</code>: Belirtilen dizini ve içeriğini siler (directory_name, dizin adıyla değiştirilmelidir).</li>
+    <li><code>pwd</code>: Mevcut dizinin tam yolunu görüntüler.</li>
+    <li><code>chmod permissions file_name</code>: Belirtilen dosyanın izinlerini (permissions, izinlerle değiştirilmelidir) ayarlar.</li>
+</ul>
+<p>Mevcut dizinde toplam <code>n</code> dosya ve klasör bulunmaktadır.</p>
+<hr />
+<!-- Metin Düzenleme -->
 
-    <h2>Dosya Düzenleme</h2>
-    <p>Dosyayı düzenlemek için (örneğin, 'nano' ile):</p>
-    <pre>nano yeni_dosya.txt</pre>
+<h4 class="heading">3.Metin Düzenleme</h4>
+<ul>
+    <li><code>nano file_name</code>: Nano metin düzenleyicisini açar.</li>
+    <li><code>vim file_name</code>: Vim metin düzenleyicisini açar.</li>
+    <li><code>emacs file_name</code>: Emacs metin düzenleyicisini açar.</li>
+</ul>
 
-    <h2>Dosya Silme</h2>
-    <p>Bir dosyayı silmek için:</p>
-    <pre>rm dosya.txt</pre>
+<hr />
+<!-- Sistem İzleme -->
 
-    <h2>Dosya Kopyalama</h2>
-    <p>Bir dosyayı kopyalamak için:</p>
-    <pre>cp kaynak_dosya hedef_dosya</pre>
+<h4 class="heading">4.Sistem İzleme</h4>
+<ul>
+    <li><code>htop</code>: Sistem kaynaklarını interaktif olarak izler.</li>
+    <li><code>iotop</code>: Disk giriş/çıkışını izler.</li>
+    <li><code>iftop</code>: Ağ trafiğini izler.</li>
+</ul>
 
-    <h2>Dosya Taşıma/Yeniden Adlandırma</h2>
-    <p>Bir dosyayı taşımak veya yeniden adlandırmak için:</p>
-    <pre>mv eski_ad yeni_ad</pre>
+<hr /> 
+<!-- veri Yedekleme ve geri yükleme  -->
 
-    <h2>Klasör Silme</h2>
-    <p>Bir klasörü ve içeriğini silmek için:</p>
-    <pre>rm -r klasor_adi</pre>
+<h4 class="heading">5.Veri Yedekleme ve Geri Yükleme</h4>
+<ul>
+    <li><code>rsync -av source_directory destination_directory</code>: Veriyi eşitler ve yedekler.</li>
+    <li><code>cp -r source_directory destination_directory</code>: Veriyi kopyalar.</li>
+    <li><code>mv source_file_or_directory destination</code>: Dosyayı veya dizini taşır.</li>
+</ul>
 
-    <!-- Buradan itibaren eklemeler -->
-    <h2>Hızlı Dosya ve Klasör Erişimi</h2>
-    <p>Hızlıca belirli bir dosya veya klasöre erişmek için 'cd' ve 'ls' komutlarını birleştirebilirsiniz:</p>
-    <pre>cd klasor_adi && ls</pre>
+<hr />
+<!-- Kullanıcı Yönetimi  -->
 
-    <h2>Dosya ve Klasör İzinleri</h2>
-    <p>Dosya ve klasör izinlerini görüntülemek ve değiştirmek için 'chmod' ve 'chown' komutlarını kullanabilirsiniz:</p>
-    <pre>ls -l
-chmod 755 dosya.txt
-chown kullanici:grup dosya.txt</pre>
+<h4 class="heading">5.Kullanıcı Yönetimi</h4>
+<ul>
+    <li><code>adduser username</code>: Yeni bir kullanıcı ekler.</li>
+    <li><code>deluser username</code>: Belirtilen kullanıcıyı siler.</li>
+    <li><code>passwd username</code>: Kullanıcı parolasını değiştirir.</li>
+</ul>
 
-    <h2>Metin Dosyalarını Bulma ve Okuma</h2>
-    <p>Belirli bir metni içeren dosyaları bulmak için 'grep' komutunu kullanabilirsiniz:</p>
-    <pre>grep 'aranan_metin' *</pre>
+<hr />
+<!-- Sistem bilgisi -->
 
-    <footer>
-        <p>© 2024 Termux Dosya ve Klasör İşlemleri</p>
+<h4 class="heading">7.Sistem Bilgisi</h4>
+<ul>
+    <li><code>uname -a</code>: Sistem bilgilerini görüntüler.</li>
+    <li><code>df -h</code>: Disk kullanımını görüntüler.</li>
+    <li><code>free -h</code>: Bellek kullanımını görüntüler.</li>
+</ul>
+
+<hr />
+<!-- Güvenlik -->
+
+<h4 class="heading">8.Güvenlik</h4>
+<ul>
+    <li><code>ufw enable</code>: Uncomplicated Firewall'ı etkinleştirir.</li>
+    <li><code>ssh user@hostname</code>: Uzak bir sunucuya SSH ile bağlanır.</li>
+    <li><code>passwd</code>: Kullanıcı parolasını değiştirir.</li>
+</ul>
+
+<hr />
+<!-- Sistem Yönetimi  -->
+
+<h4 class="heading">9.Sistem Yönetimi</h4>
+<ul>
+    <li><code>reboot</code>: Cihazı yeniden başlatır.</li>
+    <li><code>shutdown</code>: Cihazı kapatır.</li>
+    <li><code>top</code>: Çalışan işlemleri ve sistem kaynaklarını görüntüler.</li>
+</ul>
+
+<hr />
+<!-- Veritabanı Yönetimi -->
+
+<h4 class="heading">10.Veritabanı Yönetimi</h4>
+<ul>
+    <li><code>sqlite3 database.db</code>: SQLite veritabanına bağlanır.</li>
+    <li><code>mysql -u username -p</code>: MySQL veritabanına kullanıcı adı ve parola ile bağlanır.</li>
+    <li><code>psql -U username -d database_name</code>: PostgreSQL veritabanına kullanıcı adı ve veritabanı adı ile bağlanır.</li>
+</ul>
+
+<hr />
+<!-- Dosya Paylaşımi -->
+
+<h4 class="heading">11.Dosya Paylaşımı</h4>
+<ul>
+    <li><code>scp file.txt user@hostname:/path/to/destination</code>: Dosyayı uzak bir sunucuya kopyalar.</li>
+    <li><code>ftp hostname</code>: FTP sunucusuna bağlanır.</li>
+    <li><code>sftp user@hostname</code>: SFTP sunucusuna bağlanır.</li>
+</ul>
+
+<hr />
+<!-- Metin işleme  -->
+
+<h4 class="heading">12.Metin İşleme</h4>
+<ul>
+    <li><code>grep pattern file_name</code>: Belirli bir deseni içeren satırları bulur.</li>
+    <li><code>sed 's/old_text/new_text/g' file_name</code>: Dosyadaki metinleri değiştirir.</li>
+    <li><code>awk 'pattern {action}' file_name</code>: Belirli bir deseni içeren satırları işler.</li>
+</ul>
+
+<hr />
+<!-- Sıkıştırma ve Arşivleme -->
+
+<h4 class="heading">13.Sıkıştırma ve Arşivleme</h4>
+<ul>
+    <li><code>tar -czvf archive.tar.gz directory</code>: Belirtilen dizini sıkıştırır.</li>
+    <li><code>unzip archive.zip</code>: Zip arşivini açar.</li>
+    <li><code>gzip file.txt</code>: Dosyayı sıkıştırır.</li>
+</ul>
+
+<hr />
+<!-- Sistem Ayarları  -->
+
+<h4 class="heading">14.Sistem Ayarları</h4>
+<ul>
+    <li><code>date</code>: Sistem tarihini ve saati görüntüler veya ayarlar.</li>
+    <li><code>hostnamectl</code>: Hostname ayarlarını görüntüler veya ayarlar.</li>
+    <li><code>timedatectl</code>: Sistem saat dilimini ve saat ayarlarını görüntüler veya ayarlar.</li>
+</ul>
+
+<hr />
+<!-- Kabuk Programlama -->
+
+<h4 class="heading">15.Kabuk Programlama</h4>
+<ul>
+    <li><code>if</code>, <code>else</code>, <code>elif</code>: Koşullu ifadeleri kullanır.</li>
+    <li><code>for</code>, <code>while</code>: Döngüleri kullanır.</li>
+    <li><code>case</code>: Durum anahtarlarını kullanır.</li>
+</ul>
+
+<hr />
+<!-- Sistem Günlükleri -->
+
+<h4 class="heading">16.Sistem Günlükleri</h4>
+<ul>
+    <li><code>tail -f /var/log/syslog</code>: Sistem günlüklerini canlı olarak izler.</li>
+    <li><code>journalctl</code>: Systemd günlüklerini görüntüler.</li>
+    <li><code>dmesg</code>: Sistem boot işlemi sırasında çıktı verir.</li>
+</ul>
+
+<hr />
+<!-- Ağ Güvenliği --> 
+
+<h4 class="heading">17.Ağ Güvenliği</h4>
+<ul>
+    <li><code>iptables</code>: Linux güvenlik duvarı kurallarını yönetir.</li>
+    <li><code>netcat</code>: Ağ bağlantılarını dinler ve oluşturur.</li>
+    <li><code>nmap</code>: Ağ tarayıcı ve güvenlik tarayıcısıdır.</li>
+</ul>
+
+<hr />
+<!-- Veri Güvenliği  -->
+
+<h4 class="heading">18.Veri Güvenliği</h4>
+<ul>
+    <li><code>gpg</code>: Dosya ve iletişim güvenliği için OpenPGP standardı uygular.</li>
+    <li><code>openssl</code>: SSL/TLS protokolleri için şifreleme ve çözme işlemleri sağlar.</li>
+    <li><code>bcrypt</code>: Güvenli bir şekilde parolaları hash'ler.</li>
+</ul>
+
+<hr />
+<!-- Ağ Hizmetleri -->
+
+<h4 class="heading">19.Ağ Hizmetleri</h4>
+<ul>
+    <li><code>apache2ctl</code>: Apache HTTP sunucusunu yönetir.</li>
+    <li><code>nginx -t</code>: Nginx yapılandırma dosyasını doğrular.</li>
+    <li><code>systemctl</code>: Systemd hizmetlerini yönetir.</li>
+</ul>
+
+<hr />
+<!-- Sistem Yapılandırması -->
+
+<h4 class="heading">20.Sistem Yapılandırması</h4>
+<ul>
+    <li><code>dpkg-reconfigure package_name</code>: Belirtilen paketin yapılandırmasını yeniden yapılandırır.</li>
+    <li><code>sysctl</code>: Linux çekirdek parametrelerini ayarlar ve görüntüler.</li>
+    <li><code>update-alternatives</code>: Alternatif komutlar ve dosyalar arasında seçim yapar.</li>
+</ul>
+
+<hr />
+<!-- Kullanıcı Ve Grup Yönetimi -->
+
+<h4 class="heading">21.Kullanıcı ve Grup Yönetimi</h4>
+<ul>
+    <li><code>useradd</code>: Yeni bir kullanıcı hesabı oluşturur.</li>
+    <li><code>groupadd</code>: Yeni bir grup oluşturur.</li>
+    <li><code>usermod</code>: Kullanıcı hesap ayarlarını değiştirir.</li>
+</ul>
+
+<hr />
+<!-- Veri İşleme  -->
+
+<h4 class="heading">22.Veri İşleme</h4>
+<ul>
+    <li><code>sort</code>: Dosyadaki satırları sıralar.</li>
+    <li><code>uniq</code>: Dosyadaki ardışık satırları tekilleştirir.</li>
+    <li><code>wc</code>: Dosyadaki kelime, karakter ve satır sayısını sayar.</li>
+</ul>
+
+<hr />
+<!-- Sistem Bakımı  -->
+
+<h4 class="heading">23.Sistem Bakımı</h4>
+<ul>
+    <li><code>apt-get autoclean</code>: Kullanılmayan paketlerin önbelleklerini temizler.</li>
+    <li><code>du -sh directory</code>: Belirtilen dizinin disk kullanımını görüntüler.</li>
+    <li><code>fsck</code>: Dosya sistemlerini onarır.</li>
+</ul>
+
+<hr />
+<!-- Sistem Güvenliği  -->
+<h4 class="heading">24.Sistem Güvenliği</h4>
+<ul>
+    <li><code>fail2ban-client</code>: Saldırıları algılayarak IP'leri engeller.</li>
+    <li><code>ufw</code>: Uncomplicated Firewall'ı yönetir.</li>
+    <li><code>chkrootkit</code>: Rootkit taraması yapar.</li>
+</ul>
+
+<hr />
+<!-- Sistem aygıtlari -->
+
+<h4 class="heading">25.Sistem Aygıtları</h4>
+<ul>
+    <li><code>lsblk</code>: Blok aygıtlarını listeler.</li>
+    <li><code>lspci</code>: PCI aygıtlarını listeler.</li>
+    <li><code>lsusb</code>: USB aygıtlarını listeler.</li>
+</ul>
+
+<hr />
+<!-- Oyun Komutlari -->
+
+<h4 class="heading">26.Oyun Komutları</h4>
+<ul>
+    <li><code>nethack</code>: Nethack oyununu başlatır.</li>
+    <li><code>fortune</code>: Rastgele bir alıntı veya şaka görüntüler.</li>
+    <li><code>asciiquarium</code>: Terminalde bir akvaryum simülasyonu başlatır.</li>
+    <li><code>bastet</code>: Bastet, popüler Tetris oyununun tersine döndürülmüş
+    bir versiyonudur.</li>
+    <li><code>pacman4console</code>: Pacman oyununun konsol versiyonunu
+    oynatır.</li>
+    <li><code>moon-buggy</code>: Klasik Moon Buggy oyununu oynatır.</li>
+    <li><code>ninvaders</code>: Klasik Space Invaders tarzı bir oyunu konsolda
+    oynatır.</li>
+    <li><code>bsdgames</code>: BSD oyun koleksiyonunu içeren bir paketi yükler.
+    İçinde çeşitli oyunlar bulunur, örneğin Snake, Tetris, ve Hangman.</li>
+    <li><code>adventure</code>: Colossal Cave Adventure oyununu başlatır.</li>
+    <li><code>robotfindskitten</code>: Eşyaları arayarak Kitten'i bulma
+    oyunu.</li>
+    <li><code>bastard</code>: Basit bir ASCII tabanlı RPG oyunu.</li>
+    <li><code>greed</code>: Greed/Dice oyuncaklarına dayalı bir oyun.</li>
+    <li><code>fortune | cowsay</code>: Rastgele bir alıntı veya şaka ile
+    birlikte inek veya diğer hayvanlarla konuşma balonları oluşturur.</li>
+    <li><code>gnuchess</code>: GNU Chess'i başlatır, kullanıcıya karşı satranç
+    oynama imkanı sağlar.</li>
+</ul>
+
+<hr />
+<!-- Eğlence komutları  -->
+
+<h4 class="heading">27.Eğlence Komutları</h4>
+<ul>
+    <li><code>cmatrix</code>: Matris tarzında bir animasyon başlatır.</li>
+    <li><code>sl</code>: Yanlışlıkla yazılan `ls` komutunun eğlenceli bir versiyonunu başlatır.</li>
+    <li><code>cowsay</code>: Bir inek veya diğer hayvanlarla konuşma balonları oluşturur.</li>
+    <li><code>lolcat</code>: Metni renkli gösterir ve ekrana animasyonlu bir şekilde yazar.</li>
+    <li><code>figlet</code>: Büyük ASCII sanat metinleri oluşturur.</li>
+    <li><code>toilet</code>: ASCII sanat metinlerini daha çeşitli stillerde oluşturur.</li>
+    <li><code>bb</code>: ASCII sanatıyla büyük, renkli yazılar oluşturur.</li>
+    <li><code>nyancat</code>: Renkli bir kedi animasyonu oynatır.</li>
+    <li><code>cmatrix -a</code>: Matris tarzında bir animasyon başlatır,
+    renklerle birlikte.</li>
+</ul>
+
+<hr />
+<!-- Tarih ve Saat İşlemleri -->
+
+<h4 class="heading">28.Tarih ve Saat İşlemleri</h4>
+<ul>
+    <li><code>date</code>: Sistem tarihini ve saatini görüntüler veya ayarlar.</li>
+    <li><code>cal</code>: Takvimi görüntüler.</li>
+    <li><code>hwclock</code>: Donanım saatini görüntüler veya ayarlar.</li>
+    <li><code>timedatectl</code>: Sistem saat dilimini ve saat ayarlarını görüntüler veya ayarlar.</li>
+    <li><code>uptime</code>: Sistem ne kadar süredir çalışıyor olduğunu
+    gösterir.</li>
+    <li><code>uptime</code>: Sistem ne kadar süredir çalışıyor olduğunu
+    gösterir.</li>
+    <li><code>hwclock --systohc</code>: Sistem saatinin değerini donanım saatine
+    kopyalar.</li>
+</ul>
+
+<hr />
+<!-- GitHub Ayarları -->
+
+<h4 class="heading">29.GitHub Ayarları</h4>
+<ul>
+    <li><code>git config --global user.name "Your Name"</code>: Kullanıcı adınızı ayarlar.</li>
+    <li><code>git config --global user.email "your_email@example.com"</code>: E-posta adresinizi ayarlar.</li>
+    <li><code>git config --global credential.helper cache</code>: Kimlik bilgilerinizi önbelleğe alır.</li>
+    <li><code>git config --global credential.helper 'cache --timeout=3600'</code>: Kimlik bilgilerinizin önbellek süresini ayarlar (saniye cinsinden).</li>
+    
+    <hr />
+  <!-- Ruby komutları -->
+  
+    <h4 class="heading">30.Ruby Komutları</h4>
+<ul>
+    <li><code>ruby</code>: Ruby programlama dilinin yürütülmesini sağlar.</li>
+    <li><code>irb</code>: Interaktif Ruby kabuğunu başlatır.</li>
+    <li><code>gem install gem_name</code>: Belirtilen bir Ruby gemini yükler.</li>
+    <li><code>gem list</code>: Yüklü Ruby gemlerini listeler.</li>
+</ul>
+</ul>
+
+<hr />
+<!-- Futbol Haberleri -->
+
+<h4 class="heading">31.Futbol Haberleri</h4>
+<ul>
+    <li><code>football-news</code>: Son futbol haberlerini görüntüler.</li>
+    <li><code>bbc-sport-news</code>: BBC Sport'un futbol haberlerini görüntüler.</li>
+    <li><code>goal-com-news</code>: Goal.com'un futbol haberlerini görüntüler.</li>
+    <li><code>skysports-news</code>: SkySports'un futbol haberlerini görüntüler.</li>
+</ul>
+
+<hr />
+<!-- C# Kurulumu -->
+
+
+<hr />
+<!-- Ses İşlemleri --> 
+
+<h4 class="heading">32.Ses İşlemleri</h4>
+<ul>
+    <li><code>amixer sset Master 50%</code>: Master ses seviyesini %50'ye ayarlar.</li>
+    <li><code>amixer sset Master unmute</code>: Master sesini açar.</li>
+    <li><code>amixer sset Master mute</code>: Master sesini kapatır.</li>
+    <li><code>alsamixer</code>: Gelişmiş bir ses karıştırıcı arayüzü sunar.</li>
+    <li><code>mpv music.mp3</code>: "music.mp3" dosyasını çalar.</li>
+    <li><code>mpv --playlist playlist.txt</code>: "playlist.txt" dosyasındaki şarkıları çalar.</li>
+    <li><code>play-audio music.mp3</code>: "music.mp3" dosyasını çalar.</li>
+</ul>
+
+<hr />
+<!-- Video Oynatma  -->
+
+<h4 class="heading">33.Video Oynatma</h4>
+<ul>
+    <li><code>mpv video.mp4</code>: "video.mp4" dosyasını oynatır.</li>
+    <li><code>termux-media-player play video.mp4</code>: "video.mp4" dosyasını oynatır.</li>
+</ul>
+
+<hr />
+<!-- Müzik Dinleme  -->
+
+<h4 class="heading">34.Müzik Dinleme</h4>
+<ul>
+    <li><code>mpv music.mp3</code>: "music.mp3" dosyasını çalar.</li>
+    <li><code>termux-media-player play music.mp3</code>: "music.mp3" dosyasını çalar (termux-media-player gereklidir).</li>
+    <li><code>play-audio music.mp3</code>: "music.mp3" dosyasını çalar.</li>
+    <li><code>ncmpcpp</code>: Ncurses tabanlı bir müzik çaları olan ncmpcpp'yi başlatır.</li>
+    <li><code>cmus</code>: Curses tabanlı bir müzik çalar olan cmus'u başlatır.</li>
+    <li><code>vlc music.mp3</code>: "music.mp3" dosyasını VLC medya oynatıcıda açar.</li>
+</ul>
+
+    <hr />
+        <footer>
+      <ul>
+        <li class="heading">Buraksariguzeldev/docs</li>
+      </ul>
     </footer>
-</body>
+    <hr />
+  </body>
 </html>

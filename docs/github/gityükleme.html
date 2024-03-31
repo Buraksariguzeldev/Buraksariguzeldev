@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Komutları</title>
+    <link rel="stylesheet" href="../docs.css">
+</head>
+<body>
+      <hr>
+    <a href="../../İndex.html"><strong>İndex</strong></a> 
+    <hr>
+    <a href="../docs.html"><strong>Docs</strong></a>
+    <hr />
+    
+    <div class="container">
+        <div>
+            <h4 class="heading">Git Hızlı Yükleme</h4>
+            <ul>
+                <li>
+                    <code>cd /storage/emulated/0/Buraksariguzeldev</code>
+                    <button onclick="copyCode(this)">Kopyala</button>
+                </li>
+                <li>
+                    <code>git init</code>
+                    <button onclick="copyCode(this)">Kopyala</button>
+                </li>
+                <li>
+                    <code>git add .</code>
+                    <button onclick="copyCode(this)">Kopyala</button>
+                </li>
+                <li>
+                    <code>git commit -m "Initial commit"</code>
+                    <button onclick="copyCode(this)">Kopyala</button>
+                </li>
+                <li>
+                    <code>git push -u origin main</code>
+                    <button onclick="copyCode(this)">Kopyala</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <hr />
+    
+    <div>
+    <h3 class="heading">Git Hızlı İndirme</h3>
+    <ul>
+        <li>
+            <code class="command">cd /storage/emulated/0/Buraksariguzeldev</code>
+            <button class="copy-btn" onclick="copyCode(this)">Kopyala</button>
+        </li>
+        <li>
+            <code >git add .</code>
+            <button class="copy-btn" onclick="copyCode(this)">Kopyala</button>
+        </li>
+        <li>
+            <code>git pull origin main</code>
+            <button class="copy-btn" onclick="copyCode(this)">Kopyala</button>
+        </li>
+    </ul>
+</div>
+    
+ <hr />
+ 
+ <div>
+    <h3 class="heading">Senkronizasyon</h3>
+    <ul>
+        <li>
+            <strong>Senkronizasyon:</strong> yerel ve uzak sunucudaki dosyalar arasındaki uyumu sağlamak için önemlidir. Değişiklikler yapıldığında, yereldeki ve uzaktaki dosyalar arasındaki farkları görmek ve uyumu korumak için düzenli olarak senkronize etmek önemlidir.
+        </li>
+        <li>
+            <strong>Değişiklikler yapmadan önce:</strong> <code
+            class="command">git fetch</code> komutunu kullanarak uzak sunucudaki
+            güncellemeleri almak ve <code class="command">git status</code>
+            komutuyla yereldeki değişiklikleri görmek önemlidir. Ardından,
+            değişiklikleri senkronize etmek için uygun <code>git
+            merge</code> veya <code>git rebase</code> komutlarını
+            kullanabilirsiniz. Son olarak, senkronize edilmiş dosyaları uzak
+            sunucuya yüklemek için <code class="command">git push</code>
+            komutunu kullanabilirsiniz.
+        </li>
+        <li>
+            <code class="command">git fetch</code>
+            <button class="copy-btn" onclick="copyCode(this)">Kopyala</button>
+        </li>
+        <li>
+            <code class="command">git status</code>
+            <button class="copy-btn" onclick="copyCode(this)">Kopyala</button>
+        </li>
+        <li>
+            <code class="command">git merge</code>
+            <button class="copy-btn" onclick="copyCode(this)">Kopyala</button>
+        </li>
+        <li>
+          <code>git rebase</code>
+           <button class="copy-btn"
+                      onclick="copyCode(this)">Kopyala</button>
+        </li>
+        <li>
+            <code class="command">git push</code>
+            <button class="copy-btn" onclick="copyCode(this)">Kopyala</button>
+        </li>
+    </ul>
+</div>
+
+<hr />
+
+    <footer>
+      <ul>
+        <li class="heading">Buraksariguzeldev/docs</li>
+      </ul>
+    </footer>
+<hr />
+    
+    <script src="script.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

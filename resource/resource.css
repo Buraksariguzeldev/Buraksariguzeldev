@@ -96,13 +96,6 @@ h1 {
   margin-bottom: 0;
 }
 
-    .symbol {
-      margin-bottom: 10px;
-    }
-    .symbol-code {
-      font-size: 12px;
-      color: gray;
-    }
 
   .operation {
     margin-bottom: 20px;
@@ -129,4 +122,3 @@ h1 {
   color: #333;
 }
 
-.

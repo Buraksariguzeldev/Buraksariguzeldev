@@ -1,41 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Termux'ta Python ile HTTP Sunucusu Kurulumu</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-        }
-        pre {
-            background-color: #f4f4f4;
-            padding: 15px;
-            overflow: auto;
-        }
-    </style>
+    <link rel="stylesheet" href="../docs.css" type="text/css" media="all" />
+    <title>Termux Python HTTP Sunucusu</title>
 </head>
 <body>
-    <h1>Termux'ta Python ile Basit HTTP Sunucusu Kurulumu</h1>
+   
+    
+    
+        <hr>
+        <a href="../../İndex.html"><strong>İndex</strong></a> 
+        <hr>
+        <a href="../docs.html"><strong>Docs</strong></a>
+    <hr />
 
-    <h2>Python Yükleme</h2>
-    <p>Termux'a Python yüklemek için:</p>
-    <pre>pkg install python</pre>
+    <section id="python-kurulum">
+       
+        <h3 class="heading">Python Kurulumu</h3>
+        <p>Python'u Termux'ta kurmak için aşağıdaki adımları izleyin:</p>
+        <ul>
+            <li>Termux uygulamasını açın.</li>
+            <li><strong>Aşağıdaki komutu kullanarak Python paketini yükleyin:</strong><br /><code>pkg install python</code></li>
+            <li><strong>Python sürümünü kontrol edin:</strong><br /><code>python --version</code></li>
+        </ul>
+        <p>Python başarıyla kurulduysa, bu komut Python sürüm numarasını gösterecektir.</p>
+    </section>
 
-    <h2>HTML Dosyası Oluşturma</h2>
-    <p>Bir HTML dosyası oluşturun:</p>
-    <pre>echo "&lt;h1&gt;Merhaba Dünya!&lt;/h1&gt;" > index.html</pre>
+    <section id="python-http-sunucusu">
+        <hr />
+        <h3 class="heading">Python HTTP Sunucusu Kurulumu ve Kullanımı</h3>
+        <p><strong>Python HTTP sunucusunu başlatmak için aşağıdaki adımları izleyin:</strong></p>
+        <ul>
+            <li><strong>Mevcut dizine gidin:</strong><br /><code>cd /storage/emulated/0/Buraksariguzeldev</code></li>
+            <li><strong>Python HTTP sunucusunu başlatmak için aşağıdaki komutu kullanın:</strong><br /><code>python -m http.server</code></li>
+        </ul>
+        <p><strong>Bu komut, mevcut dizinde bulunan dosyaları sunmak için bir HTTP sunucusu başlatacaktır. Tarayıcınızda <a href="http://[::]:8000/%C4%B0ndex.html"><strong>http://[::]:8000/%C4%B0ndex.html</strong></a> adresine giderek sunucunuzu görebilirsiniz.</strong></p>
+    </section>
 
-    <h2>Python HTTP Sunucusunu Başlatma</h2>
-    <p>Python ile basit bir HTTP sunucusu başlatmak için:</p>
-    <pre>python -m http.server 8080</pre>
-
-    <h2>Tarayıcıda Erişim</h2>
-    <p>Web tarayıcınızda `localhost:8080` adresine giderek HTML dosyasını görüntüleyin.</p>
+    <section id="python-hakkinda">
+        <hr />
+        <h3 class="heading">Python Hakkında</h3>
+        <p>Python, genel amaçlı, yorumlanabilir, yüksek seviyeli bir programlama dilidir. Kullanım alanları arasında web geliştirme, veri analizi, yapay zeka, bilimsel hesaplama ve otomasyon bulunur.</p>
+        <p>Python'un temel özellikleri arasında kolay okunabilirlik, açık ve anlaşılır sözdizimi, geniş bir standart kütüphane ve topluluk desteği yer alır.</p>
+        <p>Python, hem başlangıç düzeyindeki kullanıcılar hem de deneyimli programcılar için ideal bir seçenektir.</p>
+    </section>
 
     <footer>
-        <p>© 2024 Python HTTP Sunucusu Dokümantasyonu</p>
+        <hr />
+        <ul>
+            <pre class="heading">Buraksariguzeldev/docs</prer>
+        </ul>
     </footer>
+    <hr />
 </body>
 </html>

@@ -1,64 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="sasskursu.css" type="text/css" media="all" />
-    <title>SCSS Kullanımı</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        pre {
-            background-color: #f4f4f4;
-            padding: 15px;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all" />
+<title>Sass Otomatik Derleme</title>
 </head>
-<body class="siyah">
-    <h1>SCSS Kullanımı</h1>
-
-    <h2>Temel SCSS Komutları</h2>
-
-    <p>SCSS kurulumu ve kullanımı ile ilgili temel komutlar:</p>
+<body>
+    <hr>
+    <a href="../../İndex.html"><strong>İndex</strong></a> 
+    <hr>
+    <a href="../docs.html"><strong>Docs</strong></a>
     
-    <h3>1. SCSS Kurulumu</h3>
-    <pre>npm install -g sass</pre>
+    <hr>
+    
+<h3 class="heading">Sass Otomatik Derleme</h3>
 
-    <h3>2. SCSS Dosyasını CSS'e Dönüştürme</h3>
-    <pre>sass sasskursu.scss sasskursu.css</pre>
+<h4 class="heading">Sass Kurulumu</h4>
+<p>Sass'ı Termux'ta kullanmak için aşağıdaki adımları izleyebilirsiniz:</p>
+<ul>
+  <li><strong>Node.js ve npm Kurulumu:</strong> Sass'ı kullanmadan önce,
+  Termux'ta Node.js ve npm'in kurulu olması gerekmektedir. Eğer henüz yüklü
+  değilse, aşağıdaki komutu kullanarak kurabilirsiniz: <br />
+  <code>pkg install nodejs</code>
+  
+  
+  
+  
+  <li><strong>Sass Kurulumu:</strong> Node.js ve npm kurulduktan sonra, Sass'ı
+  yüklemek için npm'i kullanabilirsiniz. Aşağıdaki komutu kullanarak Sass'ı
+  global olarak yükleyebilirsiniz: <br />
+  <code>npm install -g sass</code>
+</ul>
 
-    <h3>3. SCSS İzleme Modu</h3>
-    <p>Bu mod, SCSS dosyalarındaki değişiklikleri otomatik olarak algılar ve CSS'e dönüştürür.</p>
-    <pre>sass --watch sasskursu.scss:sasskursu.css</pre>
+<hr />
 
-    <h2>SCSS Dosyası Örneği</h2>
-    <p>Bir SCSS dosyasında kullanılan temel yapı:</p>
-    <pre>
-    \$primary-color: #333;
-    \$font-stack: Helvetica, Arial, sans-serif;
+<h4 class="heading">Otomatik Derleme</h4>
+<ul>
+  <li>Eğer Sass dosyaları ve CSS dosyaları aynı dizindeyse, otomatik derleme
+  için Termux'ta aşağıdaki komutu kullanabilirsiniz: <br />
+<code>sass --watch dosya_adı.scss:dosya_adı.css</code></li>
+</ul>
 
-    body {
-        font-family: \$font-stack;
-        color: \$primary-color;
-    }
+<p>Burada, <strong>dosya_adı.scss</strong> Sass dosyasının adını ve uzantısını temsil ederken, <strong>dosya_adı.css</strong> ise derlenmiş CSS dosyasının adını ve uzantısını belirtir. Bu komut, <strong>dosya_adı.scss</strong> dosyasındaki herhangi bir değişikliği izleyecek ve her değişiklik algılandığında otomatik olarak <strong>dosya_adı.css</strong> dosyasını güncelleyecektir.</p>
 
-    h1 {
-        color: darken(\$primary-color, 20%);
-    }
-    </pre>
+<h4 class="heading">SCSS Temel Özellikleri</h4>
+<p>SCSS, CSS'in geliştirilmiş bir sürümüdür ve birçok kullanışlı özellik sunar:</p>
+<ul>
+  <li><strong>Değişkenler:</strong> Renkler, fontlar ve diğer değerler için değişkenler tanımlayabilirsiniz.</li>
+  <li><strong>Nesting:</strong> CSS kurallarını daha düzenli bir şekilde organize etmek için nesting kullanabilirsiniz.</li>
+  <li><strong>Mixinler:</strong> Tekrar eden CSS kodlarını fonksiyon gibi kullanarak mixinlerle birleştirebilirsiniz.</li>
+  <li><strong>Extend:</strong> Bir CSS kuralını başka bir kurala genişletebilir ve yeniden kullanabilirsiniz.</li>
+</ul>
 
-    <h2>Ekstra SCSS Özellikleri</h2>
-    <p>SCSS ile kullanabileceğiniz bazı ekstra özellikler:</p>
-    <ul>
-        <li><strong>İç içe Yazım:</strong> SCSS, CSS seçicilerini iç içe yazmanıza olanak tanır, bu da kodunuzu daha düzenli ve okunabilir kılar.</li>
-        <li><strong>Mixins:</strong> Tekrar eden CSS bloklarını yeniden kullanmak için mixins oluşturabilirsiniz.</li>
-        <li><strong>Extend/Inheritance:</strong> Ortak stil özelliklerini paylaşmak için, bir seçiciyi başka bir seçiciye genişletebilirsiniz.</li>
-        <li><strong>Fonksiyonlar:</strong> Renkleri ayarlamak, matematiksel hesaplamalar yapmak gibi işlemler için SCSS fonksiyonlarını kullanabilirsiniz.</li>
-    </ul>
+<p>Bunlar sadece SCSS'in temel özelliklerinden bazılarıdır. Daha fazla bilgi için SCSS dökümantasyonuna göz atabilirsiniz.</p>
 
+   <hr />
+    
     <footer>
-        <p>© 2024 SCSS Dökümanı</p>
+      <ul>
+        <li class="heading">Buraksariguzeldev/docs</li>
+      </ul>
     </footer>
+    <hr />
 </body>
 </html>

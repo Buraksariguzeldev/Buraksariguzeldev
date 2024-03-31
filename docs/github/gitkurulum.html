@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../docs.css" type="text/css" media="all" />
+<title>Termux'ta Git Kurulumu ve GitHub'da Depo Oluşturma</title>
+</head>
+<body>
+    <hr>
+    <a href="../../İndex.html"><strong>İndex</strong></a> 
+    <hr>
+    <a href="../docs.html"><strong>Docs</strong></a>
+    <hr>
+
+<h3 class="heading">Termux'ta Git Kurulumu ve <br /> GitHub'da Depo Oluşturma</h3>
+
+<hr />
+
+<h4 class="heading">1. Git Kurulumu ve Global Kullanıcı Bilgileri Ayarı</h4>
+<ul>
+  
+  <hr />
+  
+  <li class="suffix">Termux'u açın.
+   </li>
+  
+  <hr />
+  
+  <li><code>pkg update</code> <br /> - Paketleri güncellemek için kullanılır.</li>
+  <hr />
+  <li> 
+  <code>pkg install git</code> <br />
+  - Git'i kurmak için kullanılır.</li>
+  
+  <hr />
+  
+  <h4 class="heading">Global kullanıcı bilgilerini ayarlamak için</h4>
+  
+  <li><code>git config --global user.name "YourName"</code> <br />
+  - Git kullanıcı adınızı ayarlar.</li>
+  
+  <hr />
+  
+  <li><code>git config --global user.email "your_email@example.com"</code> <br /> - Git e-posta adresinizi ayarlar.</li>
+  
+  <hr />
+  
+  <h4 class="heading">SSH Anahtarı Oluşturma ve Düzenleme</h4>
+  
+  <li><strong>SSH anahtarı oluşturmak için:</strong> <br />
+  <code>ssh-keygen -t rsa -b 4096 -C "your_email@example.com"</code> <br />  SSH anahtarı oluşturur.</li>
+ 
+ <hr />
+  
+  <li><strong>SSH anahtarını düzenlemek için:</strong> <br />
+  <code>nano ~/.ssh/id_rsa.pub</code> <br /> - SSH anahtarını düzenlemek için metin düzenleyiciyi açar.</li>
+</ul>
+
+<hr />
+
+<h4 class="heading">GitHub'da Depo Oluşturma</h4>
+<ul>
+  <li><strong>Giriş Yapın:</strong> GitHub hesabınıza giriş yapın.</li>
+  <li><strong>+ (Artı) İşaretine Tıklayın:</strong> Sağ üst köşede bulunan "+ (Artı)" işaretine tıklayın ve "New repository" (Yeni depo) seçeneğini seçin.</li>
+  <li><strong>Depo Adını ve Açıklamayı Girin:</strong> Yeni depo oluşturma sayfasında, depo adını ve gerekirse açıklamayı girin.</li>
+  <li><strong>Create Repository'ye Tıklayın:</strong> Bilgileri doldurduktan sonra "Create repository" (Depo oluştur) butonuna tıklayın.</li>
+</ul>
+<hr />
+<h4 class="heading">SSH Anahtarlarını GitHub'a Eklemek</h4>
+<ul>
+  <li><strong>Giriş Yapın ve Ayarlar'a Girin:</strong> GitHub hesabınıza giriş yapın ve sağ üst köşede bulunan profil fotoğrafınıza veya hesap adınıza tıklayarak açılır menüyü açın. Menüden "Settings" (Ayarlar) seçeneğine tıklayın.</li>
+  <li><strong>SSH ve GPG Keys'e Gidin:</strong> Sol menüden "SSH and GPG keys" (SSH ve GPG anahtarları) seçeneğine gidin.</li>
+  <li><strong>Yeni SSH Anahtarı Ekleyin:</strong> "New SSH key" (Yeni SSH anahtarı) veya benzer bir butona tıklayarak yeni SSH anahtarınızı ekleyin.</li>
+  <li><strong>Anahtarı Kopyalayın ve Kaydedin:</strong> SSH anahtarınızı oluşturduktan sonra, SSH anahtarınızın adını ve anahtarın kendisini belirten metni kopyalayın ve kaydedin.</li>
+</ul>
+<hr />
+<h4 class="heading">Depoyu Git ile Bağlama</h4>
+<ul>
+  <li><strong >Depo Klasörü Oluşturun:</strong> Projeyi saklayacağınız bir
+  klasör oluşturun ve içine girin. <br />
+  <code>mkdir my_project</code> <br />
+  
+  <code>cd my_project</code></li>
+  
+  <li><strong>Git'i Başlatın: <br> Klasörü bir Git deposu olarak
+  başlatın:</strong> <br />
+  <code>git init</code></li>
+  
+  <li><strong>Depo Durumunu Kontrol Edin:</strong> Hangi dosyaların izlendiğini
+  ve hangilerinin izlenmediğini kontrol edin: <br />
+  <code>git status</code></li>
+  
+  
+  
+  <li><strong>Geçmiş Commit'leri Görüntüleyin:</strong>  <br />
+  <code>git log</code></li>
+</ul>
+<hr />
+<h4 class="heading">Dosyaları GitHub'a Yükleme ve İndirme</h4>
+<ul>
+  <li><a href="gityükleme.html"><strong>Dosyaları GitHub'a Yükleme ve İndirme:</strong></a> GitHub'a dosyaları yükleme ve indirme adımlarını öğrenin.</li>
+</ul>
+
+<hr />
+
+    <footer>
+      <ul>
+        <li class="heading">Buraksariguzeldev/docs</li>
+      </ul>
+    </footer>
+<hr />
+</body>
+</html>
