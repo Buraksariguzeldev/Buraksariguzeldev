@@ -1,15 +1,16 @@
 body {
 font-family: Arial, sans-serif;
 padding: 20px;
-background-color: #f5f5f5;
+background-color: black;
 }
 
 #checkboxes {
 max-width: 600px;
 margin: auto;
 padding: 20px;
-background-color: #ffffff;
-border-radius: 8px;
+background-color: grey;
+color: white;
+border-radius: 15px;
 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -21,20 +22,21 @@ label {
 display: block;
 margin-bottom: 12px;
 padding: 8px;
-background-color: #f9f9f9;
+background-color:#f3f3 ;
 border-radius: 4px;
 cursor: pointer;
 transition: background-color 0.3s ease;
+color:black;
 }
 
 label:hover {
-background-color: #e2e2e2;
+background-color: #f3f3;
 }
 /* Mevcut stil kurallarınızın devamına ekleyin */
 span {
 margin-left: 10px;
 font-size: 0.85em;
-color: #555;
+color: #333;
 }
 
 a {
@@ -50,5 +52,25 @@ hr {
 margin-top: 20px;
 margin-bottom: 20px;
 border: 0;
-border-top: 1px solid #eee;
+border-top: 1px solid yellow;
+border-color:red ;
+}
+
+ol {
+  list-style-type: none; /* Numaralandırma işaretlerini kaldır */
+  counter-reset: my-counter; /* Sayaçıyı sıfırla */
+}
+
+ol li::before {
+  content: counter(my-counter); /* Sayacın değerini göster */
+  color: #333; /* Sayı rengini ayarla */
+  margin-right: 0.5em; /* Sayı ile metin arasındaki boşluğu ayarla */
+  counter-increment: my-counter; /* Sayacı artır */
+}
+
+.heading {
+    background-color: grey;
+    color: #fff;
+    padding: 10px;
+    border-radius: 15px;
 }
