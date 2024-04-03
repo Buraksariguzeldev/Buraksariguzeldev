@@ -2,6 +2,7 @@ body {
 font-family: Arial, sans-serif;
 padding: 20px;
 background-color: black;
+color: grey;
 }
 
 #checkboxes {
@@ -73,4 +74,8 @@ ol li::before {
     color: #fff;
     padding: 10px;
     border-radius: 15px;
+}
+
+ul {
+  list-style: none;
 }
