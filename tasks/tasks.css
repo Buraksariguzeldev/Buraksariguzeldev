@@ -77,5 +77,33 @@ ol li::before {
 }
 
 ul {
-  list-style: none;
+    list-style-type: none;
+    padding: 0;
+}
+
+p, ul li, ul li h4, ul li p {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 25px;
+    background-color: grey;
+}
+
+a {
+    color: grey;
+    text-decoration: none;
+    background-color: #fff;
+}
+
+a strong  {
+  color: grey;
+  border: 5px ridge green;
+  background-color: white;
+  border-right: 5px;
+  border-bottom: 5px;
+  border-top: 5px;
+  box-shadow: 1 2px 4px rgba(0,0,0,0.1);
 }

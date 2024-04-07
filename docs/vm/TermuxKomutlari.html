@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../docs.css" type="text/css" media="all" />
+    <title>Termux Komutlari</title>
+  
+  </head>
+  <body>
+            <hr>
+        <a href="../../İndex.html"><strong>İndex</strong></a> 
+        <hr>
+        <a href="../docs.html"><strong>Docs</strong></a>
+    <hr />
+    
+<ul>
+    <h4 class="heading">Paket Yönetimi ve Termux Paket Arama/Yükleme</h4>
+    <li><code>pkg update</code>: Paketleri güncelleyin.</li>
+    <li><code>pkg install [paket_adı]</code>: Yeni bir paket yükleyin.</li>
+    <li><code>pkg remove [paket_adı]</code>: Mevcut bir paketi kaldırın.</li>
+    <li><code>pkg list-installed</code>: Yüklü paketleri listeleme.</li>
+    <li><code>pkg search [aranan_kelime]</code>: Paket arama.</li>
+    <li><code>pkg show [paket_adı]</code>: Paket bilgisi.</li>
+    <li><code>pkg autoclean</code>: Paket temizleme.</li>
+    <li><code>pkg upgrade</code>: Yüklü paketleri güncelleme.</li>
+    <li><code>pkg reinstall [paket_adı]</code>: Paketleri yeniden yapılandırma.</li>
+    <li><code>pkg contents [paket_adı]</code>: Paket dosyasının içeriğini görüntüleme.</li>
+    <li><code>pkg reset</code>: Paketleri sıfırlama.</li>
+    <li><code>pkg autoremove</code>: Önerilen veya bağımlı olmayan paketleri kaldırma.</li>
+    <li><code>pkg repolist</code>: Paket depolarını görüntüleme.</li>
+    <li><code>pkg history</code>: Yükleme geçmişini görüntüleme.</li>
+    <li><code>pkg verify [paket_adı]</code>: Paket dosyalarını doğrulama.</li>
+    <li><code>pkg help</code>: Yardım almak.</li>
+    <li><code>pkg search --playstore [aranan_kelime]</code>: Termux'un resmi depolarında bulunan ancak henüz yüklü olmayan paketleri arar.</li>
+    <li>Örnek kullanım: <code>pkg search --playstore python</code></li>
+    <li>İlgili paketi yüklemek için: <code>pkg install [paket_adı]</code></li>
+</ul>
+
+<hr />
+
+<h4 class="heading">Dizin İşlemleri</h4>
+<ul>
+    <li><code>pwd</code>: Mevcut çalışma dizinini görüntüleme.</li>
+    <li><code>pwd -s</code>: Sessiz modda mevcut çalışma dizinini görüntüleme.</li>
+    <li><code>ls</code>: Dizindeki dosyaları ve klasörleri listeleme.</li>
+    <li><code>ls -n</code>: Dosya ve klasörleri listeleme (sayısal UID/GID).</li>
+    <li><code>cd [dizin_yolu]</code>: Başka bir dizine geçme.</li>
+    <li><code>cd ..</code>: Bir üst dizine geçme.</li>
+    <li><code>cd /</code>: Kök dizine geçme.</li>
+    <li><code>cd -</code>: Bir önceki dizine geçme.</li>
+<li><code>cd --</code>: İzinli bir dizine geçme.</li>
+<li><code>cd ~</code>: Kullanıcının ana dizinine geçme.</li>
+    <li><code>mkdir [dizin_adı]</code>: Yeni bir dizin oluşturma.</li>
+    <li><code>rmdir [dizin_adı]</code>: Boş bir dizini kaldırma.</li>
+    <li><code>rm -r [dizin_adı]</code>: Dizin ve içeriğini kaldırma.</li>
+    <li><code>cp [kaynak_dosya] [hedef_dizin]</code>: Dosyayı kopyalama.</li>
+    <li><code>mv [kaynak] [hedef]</code>: Dosya veya dizini taşıma.</li>
+    <li><code>touch [dosya_adı]</code>: Dosya oluşturma veya dosyanın zaman damgasını güncelleme.</li>
+    <li><code>chmod [izinler] [dosya_adı]</code>: Dosya izinlerini değiştirme.</li>
+    <li><code>chown [kullanıcı_adı]:[grup_adı] [dosya_adı]</code>: Dosya sahipliğini değiştirme.</li>
+    <li><code>cat [dosya_adı]</code>: Dosyanın içeriğini görüntüleme.</li>
+    <li><code>more [dosya_adı]</code>: Dosyanın içeriğini sayfa sayfa görüntüleme.</li>
+    <li><code>less [dosya_adı]</code>: Dosyanın içeriğini sayfa sayfa görüntüleme (geriye doğru kaydırılabilir).</li>
+    <li><code>head [dosya_adı]</code>: Dosyanın baş kısmını görüntüleme.</li>
+    <li><code>tail [dosya_adı]</code>: Dosyanın son kısmını görüntüleme.</li>
+    <li><code>grep [aranan_kelime] [dosya_adı]</code>: Bir dosyadaki satırları belirli bir kelimeye göre arama.</li>
+    <li><code>find [dizin_yolu] -name [dosya_adı]</code>: Belirli bir dosyayı bulma.</li>
+    <li><code>du -sh [dizin_adı]</code>: Dizin boyutunu görüntüleme.</li>
+    <li><code>ln -s [hedef_dosya] [sembolik_link]</code>: Sembolik bir link oluşturma.</li>
+    <li><code>tree [dizin_yolu]</code>: Dizin yapısını ağaç şeklinde gösterme.</li>
+    <li><code>basename [dosya_adı]</code>: Dosya adının temel adını görüntüleme.</li>
+    <li><code>dirname [dosya_adı]</code>: Dosyanın dizin adını görüntüleme.</li>
+    <li><code>stat [dosya_adı]</code>: Dosya durumunu görüntüleme.</li>
+    <li><code>file [dosya_adı]</code>: Dosya türünü belirleme.</li>
+    <li><code>ln [kaynak] [hedef]</code>: Dosya veya dizine sembolik link oluşturma.</li>
+
+</ul>
+
+<hr />
+
+<h4 class="heading">Geçmiş Komutları Yönetimi</h4>
+<ul>
+    <li><b>Geçmiş Komutları Görme:</b> <code>history</code> komutunu kullanarak geçmiş komutları görüntüleyebilirsiniz.</li>
+    <li><b>Geçmiş Komutları Düzenleme:</b> Belirli bir geçmiş komutunu düzenlemek için, <code>history</code> komutu ile komut numarasını belirleyin ve ardından <code>!<i>komut_numarası</i></code> şeklinde kullanın. Örneğin, 10. sıradaki komutu düzenlemek için: <code>!10</code></li>
+    <li><b>Geçmiş Komutları Silme:</b> Belirli bir geçmiş komutunu silmek için, <code>history</code> komutu ile silmek istediğiniz komut numarasını belirleyin ve ardından <code>history -d <i>komut_numarası</i></code> şeklinde kullanın. Örneğin, 10. sıradaki komutu silmek için: <code>history -d 10</code></li>
+</ul>
+
+<hr />
+
+<h4 class="heading">Yardım Komutları</h4>
+<ul>
+    <li><b>Yardım Almak:</b> Bir komut hakkında yardım almak için, <code>help</code> veya <code>--help</code> parametresini kullanabilirsiniz. Örneğin, <code>ls --help</code> komutunu kullanarak <code>ls</code> komutunun yardımını alabilirsiniz.</li>
+    <li><b>Man Sayfaları:</b> Ayrıntılı komut belgelerine "man" sayfalarından ulaşabilirsiniz. Bir komutun man sayfasını görüntülemek için, <code>man</code> komutunu kullanın. Örneğin, <code>man ls</code> komutunu kullanarak <code>ls</code> komutunun man sayfasını görüntüleyebilirsiniz.</li>
+    <li><b>Komut Belgesi Arama:</b> Belirli bir komutun belgesini aramak için, <code>apropos</code> komutunu kullanabilirsiniz. Örneğin, <code>apropos search</code> komutunu kullanarak "search" kelimesiyle ilgili komutları arayabilirsiniz.</li>
+    <li><b>info Komutu:</b> Belirli bir komut veya konu hakkında daha detaylı
+    bilgi almak için, <code>info</code> komutunu kullanabilirsiniz. Örneğin,
+    <code>info ls</code> komutunu kullanarak <code>ls</code> komutu hakkında
+    detaylı bilgilere erişebilirsiniz.</li>
+    
+</ul>
+
+<hr />
+
+<h4 class="heading">Dosya İndirme</h4>
+<ul>
+    <li><b>wget kullanarak dosya indirme:</b> <br>
+        <code>wget <i>dosya_url</i></code> <br>
+        Örneğin: <code>wget https://example.com/file.zip</code>
+    </li>
+    <li><b>curl kullanarak dosya indirme:</b> <br>
+        <code>curl -O <i>dosya_url</i></code> <br>
+        Örneğin: <code>curl -O https://example.com/file.zip</code>
+    </li>
+</li>
+</ul>
+
+<hr />
+
+    <footer>
+      <ul>
+        <li class="heading">Buraksariguzeldev/docs</li>
+      </ul>
+    </footer>
+    <hr />
+  </body>
+</html>

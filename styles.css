@@ -101,7 +101,7 @@ nav a:nth-of-type(2) {
 }
 
 nav a:nth-of-type(3) {
-    color: #0000ff; /* Üçüncü bağlantıyı mavi renge ayarlar */
+    color: orange; /* Üçüncü bağlantıyı mavi renge ayarlar */
 }
 
 nav a:nth-of-type(4) {

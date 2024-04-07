@@ -28,6 +28,7 @@ p, ul li, ul li h4, ul li p {
     border-radius: 25px;
     background-color: grey;
 }
+
 strong {
   color: red;
   border: 5px ridge green;

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termux'ta PHP Kurulumu</title>
+    <link rel="stylesheet" href="../docs.css" type="text/css" media="all" />
+</head>
+
+<body>
+    <header>
+        <hr>
+        <a href="../../İndex.html"><strong>İndex</strong></a>
+        <hr>
+        <a href="../docs.html"><strong>Docs</strong></a>
+    </header>
+    <hr />
+    <section id="kurulum">
+        <h4 class="heading">Termux'ta PHP Kurulumu</h4>
+
+        <p>Termux üzerinde PHP'yi kurmak için aşağıdaki adımları takip edin:</p>
+        <ul>
+            <li>Termux uygulamasını açın.</li>
+            <li>Aşağıdaki komutu kullanarak PHP paketini yükleyin:<br />
+                <code>pkg install php</code>
+            </li>
+            <li>Kurulum tamamlandıktan sonra, PHP'nin başarıyla yüklendiğini
+                    kontrol etmek için şu komutu girin:<br />
+                <code>php -v</code>
+            </li>
+            <li>Artık PHP yüklendi, bir PHP betiği oluşturabilir ve çalıştırabilirsiniz.</li>
+        </ul>
+    </section>
+
+    <hr />
+
+    <section id="php_betigi">
+        <h4 class="heading">Basit Bir PHP Betiği Oluşturma ve Localhost'ta Çalıştırma</h4>
+        <p>Bir PHP dosyası oluşturmak ve yerel bir sunucu üzerinde çalıştırmak için:</p>
+        <ul>
+            <li>Termux'ta <code>nano</code> veya başka bir metin editörünü
+                    kullanarak yeni bir PHP dosyası oluşturun, örneğin:<br />
+                <code>nano test.php</code>
+            </li>
+            <li>Aşağıdaki içeriği dosyaya yazın ve kaydedin:<br />
+                <code>&lt;?php\n    echo "Merhaba, PHP!";\n?&gt;</code>
+            </li>
+            <li>PHP yerel sunucusunu başlatmak için aşağıdaki komutu
+                    kullanın:<br />
+                <code>php -S localhost:8080</code>
+            </li>
+            <li>Herhangi bir web tarayıcısında, şu adresi ziyaret
+                    edin:<br />
+                <a
+                href="http://localhost:8080/test.php"><strong>localhost:8080/test.php</strong></a>
+                Bu adım, PHP
+                yerel sunucusu üzerinde <code>test.php</code> dosyanızı yükleyecektir.
+            </li>
+        </ul>
+    </section>
+
+    <hr />
+
+    <footer>
+
+        <ul>
+            <li class="heading">Buraksariguzeldev/docs</li>
+        </ul>
+    </footer>
+    <hr />
+</body>
+
+</html>

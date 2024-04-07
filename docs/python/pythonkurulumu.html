@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../docs.css" type="text/css" media="all" />
+    <title>Termux Python ve Localhost Kurulumu</title>
+</head>
+<body>
+   
+    <hr>
+    <a href="../../index.html"><strong>İndex</strong></a> 
+    <hr>
+    <a href="../docs.html"><strong>Docs</strong></a>
+    <hr />
+
+    <h3 class="heading">Termux Python ve Localhost Kurulumu</h3>
+
+    <h4 class="heading">Python Kurulumu</h4>
+    <p>Python'u Termux'ta kurmak için aşağıdaki adımları izleyin:</p>
+    <ul>
+        <li>Termux uygulamasını açın.</li>
+        <li>Python paketini yüklemek için şu komutu kullanın:</li>
+        <ul>
+            <li><code>pkg install python</code></li>
+        </ul>
+        <li>Python sürümünü kontrol edin:</li>
+        <ul>
+            <li><code>python --version</code></li>
+        </ul>
+    </ul>
+    <p>Eğer Python başarıyla yüklendiyse, <code>python --version</code> komutu Python sürüm numarasını gösterecektir.</p>
+    <hr>
+    
+
+    <h4 class="heading">Localhost Üzerinde Python Sunucusu Başlatma</h4>
+    <p>Localhost'ta bir Python sunucusu başlatmak için aşağıdaki adımları izleyin:</p>
+    <ul>
+        <li>Dosyalarınızı içeren dizine gidin:</li>
+        <ul>
+            <li><code>cd /dizin/yolu</code></li>
+        </ul>
+        <li>Python HTTP sunucusunu başlatmak için şu komutu kullanın:</li>
+        <ul>
+            <li><code>python -m http.server</code></li>
+        </ul>
+    </ul>
+    <p>Bu komut, dosyalarınızı localhost'ta bir HTTP sunucusu üzerinde yayınlayacaktır. Tarayıcınızda <a href="http://localhost:8000"><strong>http://localhost:8000</strong></a> adresine giderek sunucunuzu görebilirsiniz.</p>
+   
+
+    <footer>
+        <hr />
+        <ul>
+            <li class="heading">buraksariguzeldev/docs</li>
+        </ul>
+    </footer>
+    <hr />
+</body>
+</html>

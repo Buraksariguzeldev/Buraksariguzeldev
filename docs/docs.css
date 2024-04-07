@@ -104,3 +104,12 @@ footer ul li  {
   cursor: pointer;
 }
 
+b {
+    color: red;
+  border: 5px ridge green;
+  border-right: 5px;
+  border-bottom: 5px;
+  border-top: 5px;
+  background-color: black;
+  box-shadow: 1 2px 4px rgba(0,0,0,0.1);
+}

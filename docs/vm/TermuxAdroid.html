@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../docs.css" type="text/css" media="all" />
+                <hr>
+        <a href="../../İndex.html"><strong>İndex</strong></a> 
+        <hr>
+        <a href="../docs.html"><strong>Docs</strong></a>
+    <hr />
+    <title>Termux Adroid Komutları</title>
+    
+  </head>
+  <body>
+   <h4 class="heading">Termux Android Komutları</h4>
+<ul>
+    <li><code>termux-battery-status</code>: Cihazın pil durumunu gösterir.</li>
+    <li><code>termux-camera-photo [dosya_adı]</code>: Cihazın kamerasını kullanarak fotoğraf çeker ve belirtilen dosyaya kaydeder.</li>
+    <li><code>termux-clipboard-get</code>: Panodaki metni alır ve görüntüler.</li>
+    <li><code>termux-clipboard-set [metin]</code>: Panoya metin kopyalar.</li>
+    <li><code>termux-contact-list</code>: Cihazdaki kişileri listeler.</li>
+    <li><code>termux-dialog [dialog_tipi]</code>: Farklı türde dialoglar oluşturur (örneğin: notification, confirm, toast).</li>
+    <li><code>termux-download [dosya_url] [hedef_dizin]</code>: İnternet üzerinden dosya indirir.</li>
+    <li><code>termux-notification [başlık] [içerik]</code>: Bildirim oluşturur.</li>
+    <li><code>termux-share [dosya_yolu]</code>: Dosyayı paylaşır.</li>
+    <li><code>termux-sms-inbox</code>: Gelen SMS'leri görüntüler.</li>
+    <li><code>termux-sms-send -n [numara] -t [mesaj_metni]</code>: SMS gönderir.</li>
+    <li><code>termux-speech-to-text</code>: Konuşmayı metne dönüştürür.</li>
+    <li><code>termux-tts-speak [metin]</code>: Metni sesli olarak okur.</li>
+</ul>
+
+<hr />
+
+<h4 class="heading">Termux Wi-Fi Komutları</h4>
+<ul>
+    <li><code>termux-wifi-enable [true/false]</code>: Wi-Fi'yi etkinleştirir veya devre dışı bırakır.</li>
+    <li><code>termux-wifi-scaninfo</code>: Wi-Fi ağlarını tarama sonuçlarını görüntüler.</li>
+    <li><code>termux-wifi-scan</code>: Wi-Fi ağlarını tarama işlemini başlatır.</li>
+    <li><code>termux-wifi-connect [SSID] [şifre]</code>: Belirtilen Wi-Fi ağına bağlanır.</li>
+    <li><code>termux-wifi-disconnect</code>: Mevcut Wi-Fi bağlantısını keser.</li>
+    <li><code>termux-wifi-ipinfo</code>: Bağlı olduğunuz Wi-Fi ağına ilişkin IP bilgilerini görüntüler.</li>
+    <li><code>termux-wifi-nearby</code>: Yakınındaki Wi-Fi ağlarını listeler.</li>
+    <li><code>termux-wifi-tether [true/false]</code>: Cihazı bir Wi-Fi erişim noktası olarak etkinleştirir veya devre dışı bırakır.</li>
+<li><code>termux-wifi-tether</code>: Cihazı bir Wi-Fi erişim noktası olarak
+etkinleştirir veya devre dışı bırakır.</li>
+</ul>
+
+<hr />
+
+<h4 class="heading">Ses Kontrolü Komutları</h4>
+<ul>
+    <li><code>termux-volume [stream] [level]</code>: Belirli bir ses seviyesini ayarlar (örneğin, music, alarm, notification, system).</li>
+    <li><code>termux-volume stream list</code>: Mevcut ses akışlarını listeler (örneğin, music, alarm, notification, system).</li>
+    <li><code>termux-volume stream mute [stream]</code>: Belirli bir ses akışını sessize alır.</li>
+    <li><code>termux-volume stream unmute [stream]</code>: Belirli bir ses akışının sessizliğini kaldırır.</li>
+</ul>
+
+<hr />
+
+<h4 class="heading">RAM Kontrolü ve Temizleme Komutları</h4>
+<ul>
+    <li><code>termux-info</code>: Cihaz hakkında genel bilgileri görüntüler, bu bilgiler arasında RAM kullanımı da bulunur.</li>
+    <li><code>termux-reload-settings</code>: Termux ayarlarını yeniden yükler ve belleği temizler.</li>
+    <li><code>termux-wake-lock</code>: Uyku kilidini etkinleştirerek RAM temizliğini engeller.</li>
+    <li><code>termux-wake-unlock</code>: Uyku kilidini devre dışı bırakarak RAM
+    temizliğine izin verir.</li>
+    >
+    <li><code>termux-storage-get</code>: Cihazda mevcut depolama alanını görüntüler.</li>
+    <li><code>termux-storage-list</code>: Cihazdaki tüm depolama birimlerini listeler.</li>
+    <li><code>termux-file-stat [dosya_yolu]</code>: Belirtilen dosya veya dizine ilişkin istatistik bilgilerini görüntüler (örneğin, boyut, oluşturulma tarihi).</li>
+    <li><code>termux-app-list</code>: Cihazda yüklü olan tüm uygulamaları listeler.</li>
+    <li><code>ls -R /sdcard/Pictures | wc -l</code>: Telefonunuzdaki resim dosyalarının sayısını görüntüler.</li>
+</u>
+
+
+    <footer>
+        <hr />
+        <ul>
+            <li class="heading">Buraksariguzeldev/docs</li>
+        </ul>
+    </footer>
+    <hr />
+  </body>
+</html>
