@@ -4,5 +4,5 @@
     "files.autoSaveWhenNoErrors": true,
     "files.autoSave": "afterDelay",
     "editor.wordBasedSuggestions": "allDocuments",
-    "workbench.activityBar.location": "side"
+    "workbench.activityBar.location": "default"
 }

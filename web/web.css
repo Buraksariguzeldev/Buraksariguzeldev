@@ -28,6 +28,7 @@ p, ul li, ul li h4, ul li p {
     border-radius: 25px;
     background-color: grey;
 }
+
 strong {
   color: red;
   border: 5px ridge green;
@@ -92,12 +93,12 @@ code {
   border-radius: 4px;
 }
 
- footer ul li  {
+footer ul li  {
   border: 5px solid #fff;
   border-radius: 20px;
   background-color: grey;
 }
- 
+
 .copy-btn {
   color: red;
   background-color: #fff;

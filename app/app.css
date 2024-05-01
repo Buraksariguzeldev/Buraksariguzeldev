@@ -92,12 +92,12 @@ code {
   border-radius: 4px;
 }
 
- footer ul li  {
+footer ul li  {
   border: 5px solid #fff;
   border-radius: 20px;
   background-color: grey;
 }
- 
+
 .copy-btn {
   color: red;
   background-color: #fff;

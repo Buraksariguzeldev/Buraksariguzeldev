@@ -1,0 +1,106 @@
+body {
+  background-color: black;
+}
+
+/* Genel stiller */
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+p, ul li, ul li h4, ul li p {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 25px;
+    background-color: grey;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid;
+    border-color: red;
+}
+
+.heading {
+    background-color: grey;
+    color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+footer ul li  {
+  border: 5px solid #fff;
+  border-radius: 20px;
+  background-color: grey;
+}
+
+a strong  {
+  color: grey;
+  border: 5px ridge green;
+  background-color: white;
+  border-right: 5px;
+  border-bottom: 5px;
+  border-top: 5px;
+  box-shadow: 1 2px 4px rgba(0,0,0,0.1);
+}
+
+a {
+    color: grey;
+    text-decoration: none;
+    background-color: #fff;
+}
+
+/* Telefon */
+@media only screen and (max-width: 500px) {
+  .telefon {
+    display: block;
+    background-color: lightblue; /* Telefon için arka plan rengi */
+  }
+  .tablet, .pc, .buyuk-ekran {
+    display: none;
+  }
+}
+
+/* Tablet */
+@media only screen and (min-width: 501px) and (max-width: 800px) {
+  .tablet {
+    display: block;
+    background-color: lightgreen; /* Tablet için arka plan rengi */
+  }
+  .telefon, .pc, .buyuk-ekran {
+    display: none;
+  }
+}
+
+/* PC */
+@media only screen and (min-width: 801px) and (max-width: 1200px) {
+  .pc {
+    display: block;
+    background-color: lightcoral; /* PC için arka plan rengi */
+  }
+  .telefon, .tablet, .buyuk-ekran {
+    display: none;
+  }
+}
+
+/* Büyük Ekranlar */
+@media only screen and (min-width: 1201px) {
+  .buyuk-ekran {
+    display: block;
+    background-color: lightyellow; /* Büyük ekranlar için arka plan rengi */
+  }
+  .telefon, .tablet, .pc {
+    display: none;
+  }
+}
