@@ -1,5 +1,5 @@
 
-**_Buraksariguzeldev.io ya hoşgeldiniz_**
+**_Buraksariguzeldev.github.io ya hoşgeldiniz_**
 
 ---
 

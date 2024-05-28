@@ -1,3 +1,4 @@
+
 body {
   background-color: black;
 }
@@ -39,27 +40,29 @@ hr {
     border-radius: 15px;
 }
 
+a {
+  text-decoration: none;
+}
+
+a.bsd-navlink1 {
+    font-weight: bold;
+    color: #ffcc00; /* Örneğin, sarı renk */
+}
+
+.bsd-vurgulu {
+  background-color: black;
+  color: red;
+  font-weight: bold;
+}
+
 footer ul li  {
   border: 5px solid #fff;
   border-radius: 20px;
   background-color: grey;
 }
 
-a strong  {
-  color: grey;
-  border: 5px ridge green;
-  background-color: white;
-  border-right: 5px;
-  border-bottom: 5px;
-  border-top: 5px;
-  box-shadow: 1 2px 4px rgba(0,0,0,0.1);
-}
 
-a {
-    color: grey;
-    text-decoration: none;
-    background-color: #fff;
-}
+
 
 /* Telefon */
 @media only screen and (max-width: 500px) {

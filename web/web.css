@@ -29,35 +29,6 @@ p, ul li, ul li h4, ul li p {
     background-color: grey;
 }
 
-strong {
-  color: red;
-  border: 5px ridge green;
-  border-right: 5px;
-  border-bottom: 5px;
-  border-top: 5px;
-  background-color: black;
-  box-shadow: 1 2px 4px rgba(0,0,0,0.1);
-}
-
-a strong  {
-  color: grey;
-  border: 5px ridge green;
-  background-color: white;
-  border-right: 5px;
-  border-bottom: 5px;
-  border-top: 5px;
-  box-shadow: 1 2px 4px rgba(0,0,0,0.1);
-}
-
-a {
-    color: grey;
-    text-decoration: none;
-    background-color: #fff;
-}
-
-a:hover {
-    text-decoration: underline;
-}
 
 hr {
     margin-top: 20px;
@@ -74,13 +45,6 @@ hr {
 
 .suffix {
     font-style: italic;
-}
-
-.heading {
-    background-color: grey;
-    color: #fff;
-    padding: 10px;
-    border-radius: 15px;
 }
 
 .sub-nav {
@@ -105,3 +69,21 @@ footer ul li  {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a span  {
+    font-weight: bold;
+    color: #ffcc00; /* Örneğin, sarı renk */
+}
+
+.aciklama {
+  color: red;
+  font-weight: bold;
+  background-color: black;
+}

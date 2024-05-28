@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -9,9 +8,9 @@
   </head>
   <body>
             <hr>
-        <a href="../../İndex.html"><strong>İndex</strong></a> 
+        <a href="../../İndex.html" class="bsd-navlink1">İndex</a> 
         <hr>
-        <a href="../docs.html"><strong>Docs</strong></a>
+        <a href="../docs.html" class="bsd-navlink1" >Docs</a>
     <hr />
     
 <ul>
@@ -56,7 +55,8 @@
     <li><code>rm -r [dizin_adı]</code>: Dizin ve içeriğini kaldırma.</li>
     <li><code>cp [kaynak_dosya] [hedef_dizin]</code>: Dosyayı kopyalama.</li>
     <li><code>mv [kaynak] [hedef]</code>: Dosya veya dizini taşıma.</li>
-    <li><code>touch [dosya_adı]</code>: Dosya oluşturma veya dosyanın zaman damgasını güncelleme.</li>
+    <li><code>touch [dosya_adı]</code>: Dosya oluşturma veya dosyanın zaman
+    damgasını güncelleme.</li>9
     <li><code>chmod [izinler] [dosya_adı]</code>: Dosya izinlerini değiştirme.</li>
     <li><code>chown [kullanıcı_adı]:[grup_adı] [dosya_adı]</code>: Dosya sahipliğini değiştirme.</li>
     <li><code>cat [dosya_adı]</code>: Dosyanın içeriğini görüntüleme.</li>
@@ -81,22 +81,23 @@
 
 <h4 class="heading">Geçmiş Komutları Yönetimi</h4>
 <ul>
-    <li><b>Geçmiş Komutları Görme:</b> <code>history</code> komutunu kullanarak geçmiş komutları görüntüleyebilirsiniz.</li>
-    <li><b>Geçmiş Komutları Düzenleme:</b> Belirli bir geçmiş komutunu düzenlemek için, <code>history</code> komutu ile komut numarasını belirleyin ve ardından <code>!<i>komut_numarası</i></code> şeklinde kullanın. Örneğin, 10. sıradaki komutu düzenlemek için: <code>!10</code></li>
-    <li><b>Geçmiş Komutları Silme:</b> Belirli bir geçmiş komutunu silmek için, <code>history</code> komutu ile silmek istediğiniz komut numarasını belirleyin ve ardından <code>history -d <i>komut_numarası</i></code> şeklinde kullanın. Örneğin, 10. sıradaki komutu silmek için: <code>history -d 10</code></li>
+    <li><span class="bsd-vurgulu">Geçmiş Komutları Görme:</span> <code>history</code> komutunu kullanarak geçmiş komutları görüntüleyebilirsiniz.</li>
+    <li><span class="bsd-vurgulu">Geçmiş Komutları Düzenleme:</span> Belirli bir geçmiş komutunu düzenlemek için, <code>history</code> komutu ile komut numarasını belirleyin ve ardından <code>!<i>komut_numarası</i></code> şeklinde kullanın. Örneğin, 10. sıradaki komutu düzenlemek için: <code>!10</code></li>
+    <li><span class="bsd-vurgulu">Geçmiş Komutları Silme:</span> Belirli bir geçmiş komutunu silmek için, <code>history</code> komutu ile silmek istediğiniz komut numarasını belirleyin ve ardından <code>history -d <i>komut_numarası</i></code> şeklinde kullanın. Örneğin, 10. sıradaki komutu silmek için: <code>history -d 10</code></li>
 </ul>
 
 <hr />
 
 <h4 class="heading">Yardım Komutları</h4>
 <ul>
-    <li><b>Yardım Almak:</b> Bir komut hakkında yardım almak için, <code>help</code> veya <code>--help</code> parametresini kullanabilirsiniz. Örneğin, <code>ls --help</code> komutunu kullanarak <code>ls</code> komutunun yardımını alabilirsiniz.</li>
-    <li><b>Man Sayfaları:</b> Ayrıntılı komut belgelerine "man" sayfalarından ulaşabilirsiniz. Bir komutun man sayfasını görüntülemek için, <code>man</code> komutunu kullanın. Örneğin, <code>man ls</code> komutunu kullanarak <code>ls</code> komutunun man sayfasını görüntüleyebilirsiniz.</li>
-    <li><b>Komut Belgesi Arama:</b> Belirli bir komutun belgesini aramak için, <code>apropos</code> komutunu kullanabilirsiniz. Örneğin, <code>apropos search</code> komutunu kullanarak "search" kelimesiyle ilgili komutları arayabilirsiniz.</li>
-    <li><b>info Komutu:</b> Belirli bir komut veya konu hakkında daha detaylı
+    <li><span class="bsd-vurgulu" >Yardım Almak:</span> Bir komut hakkında yardım almak için, <code>help</code> veya <code>--help</code> parametresini kullanabilirsiniz. Örneğin, <code>ls --help</code> komutunu kullanarak <code>ls</code> komutunun yardımını alabilirsiniz.</li>
+    <li><span class="bsd-vurgulu">Man Sayfaları:</span> Ayrıntılı komut belgelerine "man" sayfalarından ulaşabilirsiniz. Bir komutun man sayfasını görüntülemek için, <code>man</code> komutunu kullanın. Örneğin, <code>man ls</code> komutunu kullanarak <code>ls</code> komutunun man sayfasını görüntüleyebilirsiniz.</li>
+    <li><span class="bsd-vurgulu">Komut Belgesi Arama:</span> Belirli bir komutun belgesini aramak için, <code>apropos</code> komutunu kullanabilirsiniz. Örneğin, <code>apropos search</code> komutunu kullanarak "search" kelimesiyle ilgili komutları arayabilirsiniz.</li>
+    <li><span class="bsd-vurgulu">info Komutu:</span> Belirli bir komut veya konu hakkında daha detaylı
     bilgi almak için, <code>info</code> komutunu kullanabilirsiniz. Örneğin,
     <code>info ls</code> komutunu kullanarak <code>ls</code> komutu hakkında
-    detaylı bilgilere erişebilirsiniz.</li>
+    detaylı bilgilere erişebilirsiniz.
+    </li>
     
 </ul>
 
@@ -104,7 +105,7 @@
 
 <h4 class="heading">Dosya İndirme</h4>
 <ul>
-    <li><b>wget kullanarak dosya indirme:</b> <br>
+    <li><span class="bsd-vurgulu">wget kullanarak dosya indirme:</span> <br>
         <code>wget <i>dosya_url</i></code> <br>
         Örneğin: <code>wget https://example.com/file.zip</code>
     </li>

@@ -7,11 +7,11 @@
 <title>Termux'ta Git Kurulumu ve GitHub'da Depo Oluşturma</title>
 </head>
 <body>
-    <hr>
-    <a href="../../İndex.html"><strong>İndex</strong></a> 
-    <hr>
-    <a href="../docs.html"><strong>Docs</strong></a>
-    <hr>
+            <hr>
+        <a href="../../İndex.html" class="bsd-navlink1">İndex</a> 
+        <hr>
+        <a href="../docs.html" class="bsd-navlink1" >Docs</a>
+    <hr />
 
 <h3 class="heading">Termux'ta Git Kurulumu ve <br /> GitHub'da Depo Oluşturma</h3>
 
@@ -22,8 +22,7 @@
   
   <hr />
   
-  <li class="suffix">Termux'u açın.
-   </li>
+  <li>Termux'u açın.</li>
   
   <hr />
   
@@ -48,12 +47,12 @@
   
   <h4 class="heading">SSH Anahtarı Oluşturma ve Düzenleme</h4>
   
-  <li><strong>SSH anahtarı oluşturmak için:</strong> <br />
+  <li><span class="bsd-vurgulu">SSH anahtarı oluşturmak için:</span> <br />
   <code>ssh-keygen -t rsa -b 4096 -C "your_email@example.com"</code> <br />  SSH anahtarı oluşturur.</li>
  
  <hr />
   
-  <li><strong>SSH anahtarını düzenlemek için:</strong> <br />
+  <li><span class="bsd-vurgulu">SSH anahtarını düzenlemek için:</span> <br />
   <code>nano ~/.ssh/id_rsa.pub</code> <br /> - SSH anahtarını düzenlemek için metin düzenleyiciyi açar.</li>
 </ul>
 
@@ -61,46 +60,46 @@
 
 <h4 class="heading">GitHub'da Depo Oluşturma</h4>
 <ul>
-  <li><strong>Giriş Yapın:</strong> GitHub hesabınıza giriş yapın.</li>
-  <li><strong>+ (Artı) İşaretine Tıklayın:</strong> Sağ üst köşede bulunan "+ (Artı)" işaretine tıklayın ve "New repository" (Yeni depo) seçeneğini seçin.</li>
-  <li><strong>Depo Adını ve Açıklamayı Girin:</strong> Yeni depo oluşturma sayfasında, depo adını ve gerekirse açıklamayı girin.</li>
-  <li><strong>Create Repository'ye Tıklayın:</strong> Bilgileri doldurduktan sonra "Create repository" (Depo oluştur) butonuna tıklayın.</li>
+  <li><span class="bsd-vurgulu" >Giriş Yapın:</span> GitHub hesabınıza giriş yapın.</li>
+  <li><span class="bsd-vurgulu" >+ (Artı) İşaretine Tıklayın:</span> Sağ üst köşede bulunan "+ (Artı)" işaretine tıklayın ve "New repository" (Yeni depo) seçeneğini seçin.</li>
+  <li><span class="bsd-vurgulu" >Depo Adını ve bsd-vurguluyı Girin:</span> Yeni depo oluşturma sayfasında, depo adını ve gerekirse bsd-vurguluyı girin.</li>
+  <li><span class="bsd-vurgulu" >Create Repository'ye Tıklayın:</span> Bilgileri doldurduktan sonra "Create repository" (Depo oluştur) butonuna tıklayın.</li>
 </ul>
 <hr />
 <h4 class="heading">SSH Anahtarlarını GitHub'a Eklemek</h4>
 <ul>
-  <li><strong>Giriş Yapın ve Ayarlar'a Girin:</strong> GitHub hesabınıza giriş yapın ve sağ üst köşede bulunan profil fotoğrafınıza veya hesap adınıza tıklayarak açılır menüyü açın. Menüden "Settings" (Ayarlar) seçeneğine tıklayın.</li>
-  <li><strong>SSH ve GPG Keys'e Gidin:</strong> Sol menüden "SSH and GPG keys" (SSH ve GPG anahtarları) seçeneğine gidin.</li>
-  <li><strong>Yeni SSH Anahtarı Ekleyin:</strong> "New SSH key" (Yeni SSH anahtarı) veya benzer bir butona tıklayarak yeni SSH anahtarınızı ekleyin.</li>
-  <li><strong>Anahtarı Kopyalayın ve Kaydedin:</strong> SSH anahtarınızı oluşturduktan sonra, SSH anahtarınızın adını ve anahtarın kendisini belirten metni kopyalayın ve kaydedin.</li>
+  <li><span class="bsd-vurgulu" >Giriş Yapın ve Ayarlar'a Girin:</span> GitHub hesabınıza giriş yapın ve sağ üst köşede bulunan profil fotoğrafınıza veya hesap adınıza tıklayarak açılır menüyü açın. Menüden "Settings" (Ayarlar) seçeneğine tıklayın.</li>
+  <li><span class="bsd-vurgulu" >SSH ve GPG Keys'e Gidin:</span> Sol menüden "SSH and GPG keys" (SSH ve GPG anahtarları) seçeneğine gidin.</li>
+  <li><span class="bsd-vurgulu" >Yeni SSH Anahtarı Ekleyin:</span> "New SSH key" (Yeni SSH anahtarı) veya benzer bir butona tıklayarak yeni SSH anahtarınızı ekleyin.</li>
+  <li><span class="bsd-vurgulu" >Anahtarı Kopyalayın ve Kaydedin:</span> SSH anahtarınızı oluşturduktan sonra, SSH anahtarınızın adını ve anahtarın kendisini belirten metni kopyalayın ve kaydedin.</li>
 </ul>
 <hr />
 <h4 class="heading">Depoyu Git ile Bağlama</h4>
 <ul>
-  <li><strong >Depo Klasörü Oluşturun:</strong> Projeyi saklayacağınız bir
+  <li><span class="bsd-vurgulu" >Depo Klasörü Oluşturun:</span> Projeyi saklayacağınız bir
   klasör oluşturun ve içine girin. <br />
   <code>mkdir my_project</code> <br />
   
   <code>cd my_project</code></li>
   
-  <li><strong>Git'i Başlatın: <br> Klasörü bir Git deposu olarak
-  başlatın:</strong> <br />
+  <li><span class="bsd-vurgulu">Git'i Başlatın: <br> Klasörü bir Git deposu olarak
+  başlatın:</span> <br />
   <code>git init</code></li>
   
-  <li><strong>Depo Durumunu Kontrol Edin:</strong> Hangi dosyaların izlendiğini
+  <li><span class="bsd-vurgulu">Depo Durumunu Kontrol Edin:</span> Hangi dosyaların izlendiğini
   ve hangilerinin izlenmediğini kontrol edin: <br />
   <code>git status</code></li>
   
   
   
-  <li><strong>Geçmiş Commit'leri Görüntüleyin:</strong>  <br />
+  <li><span class="bsd-vurgulu">Geçmiş Commit'leri Görüntüleyin:</span>  <br />
   <code>git log</code></li>
 </ul>
 <hr />
 <h4 class="heading">Dosyaları GitHub'a Yükleme ve İndirme</h4>
 <ul>
-  <li><a href="gitpratik.html"><strong>Dosyaları GitHub'a Yükleme ve
-  İndirme:</strong></a> GitHub'a dosyaları yükleme ve indirme
+  <li><a href="gitpratik.html" class="bsd-navlink1">Dosyaları GitHub'a Yükleme ve
+  İndirme:</a> GitHub'a dosyaları yükleme ve indirme
   adımlarını öğrenin.</li>
 </ul>
 

@@ -1,3 +1,6 @@
+@import url("../main.css");
+
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #000; /* Black background */
@@ -29,51 +32,9 @@ p, ul li, ul li h4, ul li p {
     background-color: grey;
 }
 
-strong {
-  color: red;
-  border: 5px ridge green;
-  border-right: 5px;
-  border-bottom: 5px;
-  border-top: 5px;
-  background-color: black;
-  box-shadow: 1 2px 4px rgba(0,0,0,0.1);
-}
-
-a strong  {
-  color: grey;
-  border: 5px ridge green;
-  background-color: white;
-  border-right: 5px;
-  border-bottom: 5px;
-  border-top: 5px;
-  box-shadow: 1 2px 4px rgba(0,0,0,0.1);
-}
-
-a {
-    color: grey;
-    text-decoration: none;
-    background-color: #fff;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
 hr {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 0;
-    border-top: 1px solid;
-    border-color: red;
-}
-
-.highlight {
-    color: blue;
-    font-weight: bold;
-}
-
-.suffix {
-    font-style: italic;
+    margin: 20px 0;
+    border: 1px solid red;
 }
 
 .heading {
@@ -99,18 +60,3 @@ footer ul li  {
   background-color: grey;
 }
 
-.copy-btn {
-  color: red;
-  background-color: #fff;
-  cursor: pointer;
-}
-
-b {
-    color: red;
-  border: 5px ridge green;
-  border-right: 5px;
-  border-bottom: 5px;
-  border-top: 5px;
-  background-color: black;
-  box-shadow: 1 2px 4px rgba(0,0,0,0.1);
-}

@@ -1,3 +1,5 @@
+@import url("../main.css");
+
 body {
 font-family: Arial, sans-serif;
 padding: 20px;
@@ -34,20 +36,7 @@ label:hover {
 background-color: #f3f3;
 }
 /* Mevcut stil kurallarınızın devamına ekleyin */
-span {
-margin-left: 10px;
-font-size: 0.85em;
-color: #333;
-}
 
-a {
-color: #00f;
-text-decoration: none;
-}
-
-a:hover {
-text-decoration: underline;
-}
 
 hr {
 margin-top: 20px;
@@ -90,20 +79,4 @@ p, ul li, ul li h4, ul li p {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     border-radius: 25px;
     background-color: grey;
-}
-
-a {
-    color: grey;
-    text-decoration: none;
-    background-color: #fff;
-}
-
-a strong  {
-  color: grey;
-  border: 5px ridge green;
-  background-color: white;
-  border-right: 5px;
-  border-bottom: 5px;
-  border-top: 5px;
-  box-shadow: 1 2px 4px rgba(0,0,0,0.1);
 }
