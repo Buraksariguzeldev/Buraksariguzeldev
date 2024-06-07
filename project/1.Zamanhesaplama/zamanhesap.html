@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaman Farkı Hesaplayıcı</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Zaman Farkı Hesaplayıcı</h1>
+        <div class="input-group">
+            <label for="datetime1">Başlangıç Tarih ve Saati:</label>
+            <input type="datetime-local" id="datetime1">
+        </div>
+        <div class="input-group">
+            <label for="datetime2">Bitiş Tarih ve Saati:</label>
+            <input type="datetime-local" id="datetime2">
+        </div>
+        <div class="input-group">
+            <label for="reason">Neden hesapladınız?</label>
+            <textarea id="reason" rows="3"></textarea>
+        </div>
+        <button id="calculate">Hesapla</button>
+        <div id="result"></div>
+        <h2>Geçmiş Kayıtlar</h2>
+        <button id="sort">Sırala</button>
+        <div id="history"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

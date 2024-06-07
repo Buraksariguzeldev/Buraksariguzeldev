@@ -1,3 +1,5 @@
+
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #000; /* Black background */
@@ -38,52 +40,4 @@ hr {
     border-color: red;
 }
 
-.highlight {
-    color: blue;
-    font-weight: bold;
-}
 
-.suffix {
-    font-style: italic;
-}
-
-.sub-nav {
-  display: none;
-}
-
-code {
-  background-color: orange;
-  padding: 2px 5px;
-  border-radius: 4px;
-}
-
-footer ul li  {
-  border: 5px solid #fff;
-  border-radius: 20px;
-  background-color: grey;
-}
-
-.copy-btn {
-  color: red;
-  background-color: #fff;
-  cursor: pointer;
-}
-
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-a span  {
-    font-weight: bold;
-    color: #ffcc00; /* Örneğin, sarı renk */
-}
-
-.aciklama {
-  color: red;
-  font-weight: bold;
-  background-color: black;
-}
