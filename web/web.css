@@ -1,4 +1,4 @@
-
+@import url('../main.css');
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -29,15 +29,6 @@ p, ul li, ul li h4, ul li p {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     border-radius: 25px;
     background-color: grey;
-}
-
-
-hr {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 0;
-    border-top: 1px solid;
-    border-color: red;
 }
 
 

@@ -1,24 +1,26 @@
+@import url('../main.css');
+
 @font-face {
 font-family: 'bsd-Potta_One';
-src: url('../../font/PottaOneRegular/PottaOneRegular.woff2') format('woff2');
+src: url('PottaOneRegular/PottaOneRegular.woff2') format('woff2');
 }
 
 @font-face {
 font-family: 'bsd-Skranji';
-src: url('../../font/Skranji/Skranji.woff') format('woff'),
-url('../../font/Skranji/Skranji.woff2') format('woff2');
+src: url('Skranji/Skranji.woff') format('woff'),
+url('Skranji/Skranji.woff2') format('woff2');
 }
 
 @font-face {
 font-family: 'bsd-UnicornPop';
-src: url('../../font/UnicornPop/UnicornPop.woff') format('woff'),
-url('../../font/UnicornPop/UnicornPop.woff2') format('woff2');
+src: url('UnicornPop/UnicornPop.woff') format('woff'),
+url('UnicornPop/UnicornPop.woff2') format('woff2');
 }
 
 @font-face {
 font-family: 'bsd-Nabla';
-src: url('../../font/NablaRegular/NablaRegular.woff') format('woff'),
-url('../../font/NablaRegular/NablaRegular.woff2') format('woff2');
+src: url('NablaRegular/NablaRegular.woff') format('woff'),
+url('NablaRegular/NablaRegular.woff2') format('woff2');
 }
 
 @font-face {
@@ -32,32 +34,37 @@ font-display: swap;
 
 @font-face {
 font-family: 'bsd-Langdon';
-src: url('../../font/Langdon/Langdon.woff') format('woff'),
-url('../../font/Langdon/Langdon.woff2') format('woff2');
+src: url('Langdon/Langdon.woff') format('woff'),
+url('Langdon/Langdon.woff2') format('woff2');
 }
 
 @font-face {
 font-family: 'bsd-SquimFont';
-src: url('../../font/SquimFont/SquimFont.woff') format('woff'),
-url('../../font/SquimFont/SquimFont.woff2') format('woff2');
+src: url('SquimFont/SquimFont.woff') format('woff'),
+url('SquimFont/SquimFont.woff2') format('woff2');
 }
 
 @font-face {
 font-family: 'bsd-Moonstar';
-src: url('../../font/Moonstar/Moonstar.woff') format('woff'),
-url('../../font/Moonstar/Moonstar.woff2') format('woff2');
+src: url('Moonstar/Moonstar.woff') format('woff'),
+url('Moonstar/Moonstar.woff2') format('woff2');
 }
 
 @font-face {
 font-family: 'bsd-Righteous';
-src: url('../../font/RighteousRegular/RighteousRegular.woff') format('woff'),
-url('../../font/RighteousRegular/RighteousRegular.woff2') format('woff2');
+src: url('RighteousRegular/RighteousRegular.woff') format('woff'),
+url('RighteousRegular/RighteousRegular.woff2') format('woff2');
 }
 
 @font-face {
 font-family: 'bsd-BlackOpsOne';
-src: url('../../font/BlackOpsOneRegular/BlackOpsOneRegular.woff') format('woff'),
-url('../../font/BlackOpsOneRegular/BlackOpsOneRegular.woff2') format('woff2');
+src: url('BlackOpsOneRegular/BlackOpsOneRegular.woff') format('woff'),
+url('BlackOpsOneRegular/BlackOpsOneRegular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'bsd-ethnocentric';
+  src: url('ethnocentric/ethnocentric-rg.woff')
 }
 
 .bsd-PottaOne, .bsd-Skranji, .bsd-UnicornPop, .bsd-Nabla, .bsd-Socialtype, .bsd-Langdon, .bsd-SquimFont, .bsd-Moonstar, .bsd-Righteous, .bsd-BlackOpsOne {
@@ -103,6 +110,9 @@ font-family: 'bsd-Righteous', sans-serif;
 font-family: 'bsd-BlackOpsOne', sans-serif;
 }
 
+.bsd-ethnocentric {
+  font-family: 'bsd-ethnocentric';
+}
 body {
 background: black;
 }
