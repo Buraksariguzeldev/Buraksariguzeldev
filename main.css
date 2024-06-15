@@ -33,3 +33,19 @@ border: 0;
 border-top: 1px solid yellow;
 border-color:red ;
 }
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+p, ul li, ul li h4, ul li p {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 25px;
+    background-color: grey;
+}
