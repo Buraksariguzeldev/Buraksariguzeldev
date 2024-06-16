@@ -1,47 +1,33 @@
-body {
-    background-color: black;
-    color:white;
-}
-
-
-.borderders {
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    width: 600px;
-
-}
-
 .solid {
-    border: 5px solid;
+    border: 5px solid red;
 }
 
 .ridge {
-    border: 5px ridge;
+    border: 5px ridge green;
 }
 
 .dotted {
-    border: 5px dotted;
+    border: 5px dotted blue;
 }
 
 .double {
-    border: 5px double;
+    border: 5px double yellow;
 }
 
 .dashed {
-    border: 5px dashed;
+    border: 5px dashed orange;
 }
 
 .groove {
-    border: 5px groove;
+    border: 5px groove red;
 }
 
 .inset {
-    border: 5px inset;
+    border: 5px inset purple;
 }
 
 .outset {
-    border: 5px outset;
+    border: 5px outset brown;
 }
 
 .hidden {
@@ -55,31 +41,31 @@ body {
 /* BORDER BOTTOM */
 
 .solidbottom {
-    border-bottom: 5px solid;
+    border-bottom: 5px solid darkgreen;
 }
 
 .solidtop {
-    border-top: 5px solid;
+    border-top: 5px solid darkred;
 }
 
 .solidleft {
-    border-left: 5px solid;
+    border-left: 5px solid red;
 }
 
 .solidright {
-    border-right: 5px solid;
+    border-right: 5px solid yellow;
 }
 
 .borderradius {
-    border-radius: 20px;
+    border-radius: 20px orange;
 }
 
 .borderblock {
-    border-block: 5px solid;
+    border-block: 5px solid blue;
 }
 
 .borderinline {
-    border-inline: 5px solid;
+    border-inline: 5px solid #ffd3f4;
 }
 
 
@@ -103,19 +89,19 @@ body {
 
 .borderimage {
     border: 10px solid transparent;
-    border-image: url('../../img/border.png') 30 round;
+    border-image: url('../../../img/border.png') 30 round;
 }
 
 .borderimage1 {
     border: 10px solid transparent;
-    border-image: url('../../img/border.png') 30 stretch;
+    border-image: url('../../../img/border.png') 30 stretch;
 }
 
 .borderimage2 {
     height: 10px;
     background-color: yellow;
     border: 15px solid transparent;
-    border-image-source: url('../../img/border.png');
+    border-image-source: url('../../../img/border.png');
     border-image-repeat: stretch;
     border-image-slice: 30;
     border-image-width: 10px;

@@ -63,7 +63,7 @@ url('BlackOpsOneRegular/BlackOpsOneRegular.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: 'bsd-ethnocentric';
+  font-family: 'bsd-Ethnocentric';
   src: url('ethnocentric/ethnocentric-rg.woff')
 }
 
@@ -110,13 +110,6 @@ font-family: 'bsd-Righteous', sans-serif;
 font-family: 'bsd-BlackOpsOne', sans-serif;
 }
 
-.bsd-ethnocentric {
-  font-family: 'bsd-ethnocentric';
-}
-body {
-background: black;
-}
-
-li {
-color: white;
+.bsd-Ethnocentric {
+  font-family: 'bsd-Ethnocentric';
 }

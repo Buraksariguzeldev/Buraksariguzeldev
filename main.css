@@ -3,15 +3,13 @@ body {
   color: white;
 }
 
-
-
 a {
   text-decoration: none;
 }
 
 a.bsd-navlink1 {
-    font-weight: bold;
-    color: #ffcc00; /* Örneğin, sarı renk */
+  font-weight: bold;
+  color: #ffcc00;
 }
 
 .bsd-vurgulu {
@@ -20,32 +18,37 @@ a.bsd-navlink1 {
   font-weight: bold;
 }
 
-footer ul li  {
+footer ul li {
   border: 5px solid #fff;
   border-radius: 20px;
   background-color: grey;
 }
 
 hr {
-margin-top: 20px;
-margin-bottom: 20px;
-border: 0;
-border-top: 1px solid yellow;
-border-color:red ;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid yellow;
+  border-color: red;
 }
 
 ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
-p, ul li, ul li h4, ul li p {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 10px 15px;
-    margin-bottom: 5px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    border-radius: 25px;
+p, ul li, ul li h4, ul li p, ol li, h4{
+  background-color: grey;
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  margin-bottom: 5px;
+  border-radius: 25px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.bsd-baslik1 {
     background-color: grey;
+    color: blue;
+    padding: 10px;
+    border-radius: 15px;
 }
