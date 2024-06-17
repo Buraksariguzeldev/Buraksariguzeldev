@@ -1,115 +1,115 @@
 @import url('../main.css');
 
 @font-face {
-font-family: 'bsd-Potta_One';
-src: url('PottaOneRegular/PottaOneRegular.woff2') format('woff2');
+  font-family: 'bsd-Potta_One';
+  src: url('PottaOne/PottaOneRegular.woff2') format('woff2');
 }
 
 @font-face {
-font-family: 'bsd-Skranji';
-src: url('Skranji/Skranji.woff') format('woff'),
-url('Skranji/Skranji.woff2') format('woff2');
+  font-family: 'bsd-Skranji';
+  src: url('Skranji/Skranji.woff') format('woff'),
+       url('Skranji/Skranji.woff2') format('woff2');
 }
 
 @font-face {
-font-family: 'bsd-UnicornPop';
-src: url('UnicornPop/UnicornPop.woff') format('woff'),
-url('UnicornPop/UnicornPop.woff2') format('woff2');
+  font-family: 'bsd-UnicornPop';
+  src: url('UnicornPop/UnicornPop.woff') format('woff'),
+       url('UnicornPop/UnicornPop.woff2') format('woff2');
 }
 
 @font-face {
-font-family: 'bsd-Nabla';
-src: url('NablaRegular/NablaRegular.woff') format('woff'),
-url('NablaRegular/NablaRegular.woff2') format('woff2');
+  font-family: 'bsd-Nabla';
+  src: url('Nabla/NablaRegular.woff') format('woff'),
+       url('Nabla/NablaRegular.woff2') format('woff2');
 }
 
 @font-face {
-font-family: 'bsd-Socialtype';
-src: url('../font/socialtype/socialtype.woff') format('woff'),
-url('../font/socialtype/socialtype.woff2') format('woff2');
-font-weight: normal;
-font-style: normal;
-font-display: swap;
+  font-family: 'bsd-Langdon';
+  src: url('Langdon/Langdon.woff') format('woff'),
+       url('Langdon/Langdon.woff2') format('woff2');
 }
 
 @font-face {
-font-family: 'bsd-Langdon';
-src: url('Langdon/Langdon.woff') format('woff'),
-url('Langdon/Langdon.woff2') format('woff2');
+  font-family: 'bsd-SquimFont';
+  src: url('SquimFont/SquimFont.woff') format('woff'),
+       url('SquimFont/SquimFont.woff2') format('woff2');
 }
 
 @font-face {
-font-family: 'bsd-SquimFont';
-src: url('SquimFont/SquimFont.woff') format('woff'),
-url('SquimFont/SquimFont.woff2') format('woff2');
+  font-family: 'bsd-Moonstar';
+  src: url('Moonstar/Moonstar.woff') format('woff'),
+       url('Moonstar/Moonstar.woff2') format('woff2');
 }
 
 @font-face {
-font-family: 'bsd-Moonstar';
-src: url('Moonstar/Moonstar.woff') format('woff'),
-url('Moonstar/Moonstar.woff2') format('woff2');
+  font-family: 'bsd-Righteous';
+  src: url('Righteous/RighteousRegular.woff'),
+      url('Righteous/RighteousRegular.woff2') ;
 }
 
 @font-face {
-font-family: 'bsd-Righteous';
-src: url('RighteousRegular/RighteousRegular.woff') format('woff'),
-url('RighteousRegular/RighteousRegular.woff2') format('woff2');
-}
-
-@font-face {
-font-family: 'bsd-BlackOpsOne';
-src: url('BlackOpsOneRegular/BlackOpsOneRegular.woff') format('woff'),
-url('BlackOpsOneRegular/BlackOpsOneRegular.woff2') format('woff2');
+  font-family: 'bsd-BlackOpsOne';
+  src: url('BlackOpsOne/BlackOpsOne-Regular.woff'),
+       url('BlackOpsOne/BlackOpsOne-Regular.woff2');
 }
 
 @font-face {
   font-family: 'bsd-Ethnocentric';
-  src: url('ethnocentric/ethnocentric-rg.woff')
+  src: url('ethnocentric/ethnocentric-rg.woff');
 }
 
-.bsd-PottaOne, .bsd-Skranji, .bsd-UnicornPop, .bsd-Nabla, .bsd-Socialtype, .bsd-Langdon, .bsd-SquimFont, .bsd-Moonstar, .bsd-Righteous, .bsd-BlackOpsOne {
-font-display: swap;
+@font-face {
+  font-family: 'bsd-Brolink';
+  src: url('Brolink/BrolinkDEMO.woff');
+  src: url('Brolink/BrolinkDEMO.woff2')
 }
+
+/* class */
+
 .bsd-PottaOne {
-font-family: 'bsd-Potta_One', sans-serif;
+  font-family: 'bsd-Potta_One', sans-serif;
 }
 
 .bsd-Skranji {
-font-family: 'bsd-Skranji', serif;
+  font-family: 'bsd-Skranji', serif;
 }
 
 .bsd-UnicornPop {
-font-family: 'bsd-UnicornPop', cursive;
+  font-family: 'bsd-UnicornPop', cursive;
 }
 
 .bsd-Nabla {
-font-family: 'bsd-Nabla', monospace;
+  font-family: 'bsd-Nabla', monospace;
 }
 
 .bsd-Socialtype {
-font-family: 'bsd-Socialtype', sans-serif;
+  font-family: 'bsd-Socialtype', sans-serif;
 }
 
 .bsd-Langdon {
-font-family: 'bsd-Langdon', sans-serif;
+  font-family: 'bsd-Langdon', sans-serif;
 }
 
 .bsd-SquimFont {
-font-family: 'bsd-SquimFont', fantasy;
+  font-family: 'bsd-SquimFont', fantasy;
 }
 
 .bsd-Moonstar {
-font-family: 'bsd-Moonstar', cursive;
+  font-family: 'bsd-Moonstar', cursive;
 }
 
 .bsd-Righteous {
-font-family: 'bsd-Righteous', sans-serif;
+  font-family: 'bsd-Righteous', sans-serif;
 }
 
 .bsd-BlackOpsOne {
-font-family: 'bsd-BlackOpsOne', sans-serif;
+  font-family: 'bsd-BlackOpsOne', sans-serif;
 }
 
 .bsd-Ethnocentric {
   font-family: 'bsd-Ethnocentric';
+}
+
+.bsd-Brolink {
+  font-family: 'bsd-Brolink';
 }
