@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PHP ve HTML Sayfası</title>
     <style>
+    @import url('../../../main.css');
+    
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -34,11 +36,11 @@
 <body>
     <div class="container">
 <hr />
-        <a href="../../../İndex.html">İndex.html</a>
+        <a href="../../../İndex.html" class="bsd-navlink1">İndex.html</a>
 <hr />
-        <a href="../../lib.html">Lib</a>
+        <a href="../../lib.html" class="bsd-navlink1">Lib</a>
 <hr />
-        <a href="../../../docs/php/phpkullanim.html">Php kullanim</a>
+        <a href="../../../docs/php/phpkullanim.html" class="bsd-navlink1">Php kullanim</a>
 <hr />
 
         <?php
@@ -50,5 +52,13 @@
             <p class="kirmizi-metin">Bu bir HTML paragrafıdır ve kırmızı renkte yazıdır.</p>
         </div>
     </div>
+    
+    <hr />
+    <footer>
+      <ul>
+        <li>buraksariguzeldev/lib</li>
+      </ul>
+    </footer>
+    <hr />
 </body>
 </html>
