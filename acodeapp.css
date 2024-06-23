@@ -1,6 +1,6 @@
 
-    body { font-family: Arial, sans-serif; margin: 40px;  }
-    h1, h2 { color: #333; }
+    body { font-family: Arial, sans-serif; margin: 40px; background-color: black; color: white; }
+    h1, h2 { color: #fff; }
     ul { list-style-type: none; padding: 0; }
     li { margin: 10px 0; }
     a { text-decoration: none; color: yellow; background: black; }
